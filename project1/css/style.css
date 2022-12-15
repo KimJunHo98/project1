@@ -65,16 +65,36 @@ main { display: block; position: relative; }
 .quick_menu nav ul li a:hover i { right: -40px; }
 
 /* schedule */
-#schedule { width: 100%; height: 1000px; padding-top: 12%; background-color: #134aa9; }
+#schedule { width: 100%; padding-top: 12%; background-color: #134aa9; }
 .schedule { text-align: center; color: #fff; }
 .schedule .month_wrap { display: flex; flex-direction: column-reverse; }
-.schedule .month { display: flex; flex-direction: row; }
-.schedule .month ul { display: flex; flex-direction: row; }
+.schedule .month { width: 100%; height: 100px; display: flex; flex-direction: row; align-items: center; margin-top: 1%; padding: 15px; }
+.schedule .month ul { display: flex; flex-direction: row; align-items: center; }
 .schedule .month ul li a { color: #94c8fb; } /* 접근성을 위해서 색상 수정 */
 .schedule .month ul li a:hover { color: #fff; }
-.schedule .month ul li.month_btn { margin-top: 10px; }
-.schedule .month ul li.month_text { padding: 0 5px 20px 5px; }
-.schedule .month ul li.month_text p { display: flex; flex-direction: column; color: #94c8fb; }
+.schedule .month ul.month_list { height: 100%; margin-right: 2%; }
+.schedule .month ul.month_list li.month_btn a i { font-size: 1.2rem; font-weight: bold; }
+.schedule .month ul.month_list li.month_text { padding: 0 5px; }
+.schedule .month ul.month_list li.month_text p { font-family: "GmarketSansMedium", "Noto Sans KR", sans-serif; display: flex; flex-direction: column; color: #94c8fb; line-height: 1.1; }
+.schedule .month ul.month_list li.month_text p em { font-family: "GmarketSansBold", "Noto Sans KR", sans-serif; font-size: 3.8rem; }
+.schedule .month ul.month_list li.month_text p span { font-size: 1.6rem; }
+.schedule .month ul.day_list { width: 93%; }
+.schedule .month ul.day_list li { width: 100%; }
+.schedule .month ul.day_list li a { width: 100%; height: 40px; display: block; font-size: 1.6rem; line-height: 40px; }
+.schedule .month ul.day_list li a:focus { border: 1px solid #fff; border-radius: 50px; line-height: 36px; color: #fff; }
 .schedule ul.more_01 { display: flex; flex-direction: row-reverse; font-size: 1.6rem; }
 .schedule ul.more_01 li a { color: #fff; }
 .schedule ul.more_01 li a:hover { color: #94c8fb; }
+.show_sched { width: 100%; padding-bottom: 5%; }
+.show_sched .show_sched_list { display: flex; flex-direction: row; justify-content: space-between; width: 100%; height: 650px; padding: 70px 0; }
+.show_sched .show_sched_list .sched_list_img { width: 340px; position: relative; }
+.show_sched .show_sched_list .sched_list_img img { width: 100%; height: 100%; border-radius: 15px; display: block; }
+.show_sched .show_sched_list .sched_list_img a { width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; background-color: rgba(0,0,0,.7); color: #fff; border-radius: 15px; }
+.show_sched .show_sched_list .sched_list_img a div { width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; }
+.show_sched .show_sched_list .sched_list_img a div ul { width: 90%; }
+.show_sched .show_sched_list .sched_list_img a ul.sched_img_tit { padding-bottom: 20px; border-bottom: 1px solid #b9b9b9; }
+.show_sched .show_sched_list .sched_list_img a ul.sched_img_tit li.top { font-size: 1.6rem; display: inline-block; padding: 2% 5.6% 2%; border: 1px solid #fff; border-radius: 30px; margin-bottom: 10px; }
+.show_sched .show_sched_list .sched_list_img a ul.sched_img_tit li.bottom { font-size: 2rem; }
+.show_sched .show_sched_list .sched_list_img a ul.sched_img_desc { padding-top: 20px; }
+.show_sched .show_sched_list .sched_list_img a ul.sched_img_desc li { font-size: 1.5rem; }
+.show_sched .show_sched_list .sched_list_img a ul.sched_img_desc li.bottom { padding-right: 65px; }
