@@ -2782,36 +2782,4 @@
 
 .xi-fw {
   width: 1.28571em;
-  text-align: center;
-}
-.xi-ul {
-  padding-left: 0;
-  margin-left: 2.14286em;
-  list-style-type: none;
-}
-.xi-ul > li {
-  position: relative;
-}
-.xi-li {
-  position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
-  text-align: center;
-}
-.xi-li.xi-lg {
-  left: -1.85714em;
-}
-.xi-border {
-  padding: 0.2em 0.25em 0.15em;
-  border: solid 0.08em #eee;
-  border-radius: 0.1em;
-}
-.pull-right {
-  float: right;
-  margin-right: 0.3em;
-}
-.pull-left {
-  float: left;
-  margin-right: 0.3em;
 }
