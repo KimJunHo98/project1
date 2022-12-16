@@ -36,7 +36,7 @@ body, input, textarea, select, button, table {
 }
 
 /* 글꼴 계단현상 완화 */
-body { webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
 
 /* 제목태그 초기화 */
 h1, h2, h3, h4, h5, h6 { font-size: 1.4rem; color: #222; font-weight: normal; }
