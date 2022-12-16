@@ -57,6 +57,11 @@
     <!-- //skip_menu -->
 
     <div id="wrap">
+        <!-- scroll_top -->
+        <div class="scroll_top">
+            <a href="#header"><i class="xi-angle-up"></i></a>
+        </div>
+        <!-- scroll_top -->
         <!-- header -->
         <header id="header">
             <div class="container">
@@ -116,6 +121,11 @@
                             <li class="utill_search"><a href="#"><i class="xi-search"></i>검색</a></li>
                             <li class="utill_cal"><a href="#"><i class="xi-calendar"></i>일정</a></li>
                         </ul>
+                        <!-- mobile_menu -->
+                        <div class="m_gnb">
+                            <a href="#" class="m_menu"><i class="xi-bars"></i></a>
+                        </div>
+                        <!-- //mobile_menu -->
                     </div>
                 </div>
             </div>
@@ -128,18 +138,18 @@
             <div class="container">
                 <div class="row">
                     <div class="main_visual">
-                        <div class="main_visual_wrap">
-                            <img src="img/main_visual_img01.gif" class="main_visual_img" alt="메인 비주얼 이미지01">
+                        <div class="main_visual_box"> <!-- 크기 다시잡아야함 position -->
+                            <img src="img/main_visual_img01.gif" alt="메인 비주얼 이미지01">
                             <div class="main_visual_text">
                                 <p>경기도 생활문화의 중심</p>
                                 <h3>일상에 문화를<br>물들이다</h3>
                             </div>
                         </div>
-                        <!-- <div class="main_visual_wrap">
-                            <img src="img/main_visual_img02.gif" class="main_visual_img" alt="메인 비주얼 이미지02">
+                        <!-- <div class="main_visual_box">
+                            <img src="img/main_visual_img02.gif" alt="메인 비주얼 이미지02">
                             <div class="main_visual_text">
                                 <p>지역주민 누구나 이용 가능한 생활문화공간</p>
-                                <h2>경기도민<br>만나다</h2>
+                                <h3>경기도민<br>만나다</h3>
                             </div>
                         </div> -->
                     </div>
@@ -228,7 +238,7 @@
                                 </div>
                                 <ul class="more_01">
                                     <li><a href="#">더보기<i class="xi-plus-min"></i></a></li>
-                                </ul>
+                                </ul> <!-- position: absolute 시켜야함 -->
                             </div>
                         </div>
                         <div class="show_sched">
@@ -315,7 +325,7 @@
                                 </div>
                                 <div class="space_img">
                                     <img src="img/space_01.png" alt="책놀이터 " class="space_img_01">
-                                    <!-- <img src="img/space_02.png" alt="생활수유실 " class="space_img_02">
+                                    <img src="img/space_02.png" alt="생활수유실 " class="space_img_02">
                                     <img src="img/space_03.png" alt="동네부엌 " class="space_img_03">
                                     <img src="img/space_04.png" alt="생생수유실 " class="space_img_04">
                                     <img src="img/space_05.png" alt="마주침공간1 " class="space_img_05">
@@ -543,6 +553,67 @@
             <div class="container">
                 <div class="row">
                     <div class="footer">
+                        <div class="footer_top">
+                            <ul class="footer_link">
+                                <li class="footer_link_list">
+                                    <a href="#">개인정보 처리방침</a>
+                                </li>
+                                <li class="footer_link_list">
+                                    <a href="#">이용약관</a>
+                                </li>
+                                <li class="footer_link_list">
+                                    <a href="#">행정정보공개</a>
+                                </li>
+                                <li class="footer_link_list">
+                                    <a href="#">클린신고센터</a>
+                                </li>
+                            </ul>
+                            <ul class="footer_etc">
+                                <li>
+                                    <ul class="sns_link">
+                                        <li class="sns_link_list">
+                                            <a target="_blank" href="https://www.facebook.com/ggcflife/"><i class="xi-facebook-official"></i></a>
+                                        </li>
+                                        <li class="sns_link_list">
+                                            <a target="_blank" href="https://pf.kakao.com/_uYNNC"><i class="xi-kakaotalk"></i></a>
+                                        </li>
+                                        <li class="sns_link_list">
+                                            <a target="_blank" href="https://www.youtube.com/user/oh1110"><i class="xi-youtube-play"></i></a>
+                                        </li>
+                                        <li class="sns_link_list">
+                                            <a target="_blank" href="https://www.instagram.com/glife_ggcf/"><i class="xi-instagram"></i></a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="family_link">
+                                        <a href="#" class="family_link_default">패밀리 사이트<i class="xi-angle-up-min"></i></a>
+                                        <ul class="family_link_list">
+                                            <li><a href="https://sscampus.kr/" target="_blank">경기상상캠퍼스</a></li>
+                                            <!--<li><a href="https://e.sscampus.kr/" target="_blank">e상상캠퍼스</a></li>-->
+                                            <li><a href="https://www.ggcf.kr/" target="_blank">경기문화재단</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_bottom">
+                            <div class="footer_logo">
+                                <a href="#"><img src="img/main-logo-gray.svg" alt="경기생활문화센터 로고"></a> 
+                                <a href="https://www.gg.go.kr/" class="gunggido_logo"><img src="img/gunggido_logo.svg" alt="경기도 로고"></a>
+                            </div>
+                            <div class="footer_address">
+                                <ul>
+                                    <li>경기문화재단 경기생활문화센터 (16614) 경기도 수원시 권선구 서둔로 166 생생1990 / 대표전화 031-296-0540</li>
+                                    <li>사업자번호 135-82-06932</li>
+                                    <li>COPYRIGHT©GGCF. ALL RIGHTS RESERVED.</li>
+                                </ul>
+                            </div>
+                            <div class="footer_vaild">
+                                <a href="https://validator.w3.org/check?uri=https://kimjunho98.github.io/project1/"><img src="https://www.w3.org/Icons/valid-html401" alt=""></a> 
+                                <a href="https://jigsaw.w3.org/css-validator/validator?uri=https://kimjunho98.github.io/project1/"><img src="https://jigsaw.w3.org/css-validator/images/vcss" alt=""></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
