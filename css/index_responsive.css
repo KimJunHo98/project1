@@ -1,5 +1,351 @@
 @charset "utf-8";
 
+/* max-width: 1400px */
 @media all and (max-width: 1400px) {
+    .container { width: 100%; max-width: 100%; }
+
     .row { padding: 0 30px; }
+
+    /* main_visual */
+    .main_visual .main_visual_box img { width: calc(90% - 420px); }
+
+    /* quick_menu  */
+    #quick_menu .row { padding: 0; }
+
+    /* sns */
+    #sns .row { padding: 0; }
+    .sns .sns_top { padding: 0 30px; }
+    .sns .sns_bottom .sns_slide_vid { width: 59%; }
+
+    /* new */
+    .new .new_list_wrap .notice > li a p.notice_name { height: 60px; font-size: 2rem; line-height: 30px; margin: 10px 0 30px; }
+    .new .new_list_wrap .notice > li a { padding: 35px 30px 60px; }
+    .new .new_list_wrap .notice > li a p.notice_cont { margin-bottom: 60px; }
+}
+
+/* max-width: 1280px */
+@media all and (max-width: 1280px) {    
+    /* header */
+    #header { position: sticky; top: 0; left: 0; z-index: 10; }
+    #header > .sub_menu_bg { display: none; }
+    .m_gnb { display: block; }
+    .header { height: 57px; }
+    .header .header_logo { width: 80px; }
+    .header .header_logo a img { padding-top: 10px; }
+    .header .nav { display: none; }
+    .header ul.utill_menu { display: none; }
+
+    /* main_visual */
+    .main_visual { height: 500px; }
+    .main_visual .main_visual_box img { width: calc(90% - 390px); }
+    .main_visual .main_visual_text { top: 43%; }
+    .main_visual .main_visual_text h3 { font-size: 6rem; }
+
+    /* schedule */
+    .schedule .month { height: 100%; margin-top: 3%; padding: 15px 0; }
+    .schedule .month ul { width: 100%; justify-content: space-between; }
+    .schedule .month ul.month_list { margin-right: 0; }
+    .schedule .month ul.month_list li.month_btn a { width: 100%; display: block; }
+    .schedule .month ul.month_list li.month_btn a i { font-size: 5rem; font-weight: bold; }
+    .schedule .month ul.month_list li.month_text { padding: 0; }
+    .schedule .month ul.month_list li.month_text p { font-family: "GmarketSansBold"; flex-direction: row-reverse; }
+    .schedule .month ul.month_list li.month_text p em { font-family: "GmarketSansBold"; font-size: 5.4rem; }
+    .schedule .month ul.month_list li.month_text p span { font-size: 5.4rem; }
+    .schedule .month ul.month_list li.month_text p span::after { content: "."; display: inline-block; padding-right: 10px; }
+    .schedule .month ul.day_list { display: none; }
+    .schedule .show_sched .show_sched_list { width: 30%; margin-right: 5%; }
+
+    /* space */
+    .space .space_bottom { padding-top: 40px; }
+    .space .space_bottom .space_list .space_list_btn li { padding-right: 5px; }
+    .space .space_bottom .space_list .space_list_btn li a { padding: 13px 20px; font-size: 1.8rem; }
+
+    /* center */
+    .center .center_img { width: 38%; }
+
+    /* sns */
+    .sns .sns_bottom .sns_slide_vid .slide_box a .thumbnail_img img { width: 208px; height: 208px; }
+}
+
+/* max-width: 1200px */
+@media all and (max-width: 1200px) {
+    /* main_visual */
+    .main_visual { height: 460px; }
+
+    /* schedule */
+    .schedule .month ul.month_list li.month_btn a i { font-size: 4.8rem; }
+    .schedule .month ul.month_list li.month_text p em { font-size: 5rem; }
+    .schedule .month ul.month_list li.month_text p span { font-size: 5rem; }
+    .schedule .show_sched .show_sched_list { width: 30%; margin-right: 5%; }
+
+    /* space */
+    .space .space_bottom .space_list .space_list_btn:nth-child(2){ padding: 28px 0; }
+
+    /* sns */
+    .sns .sns_bottom .sns_slide_vid .slide_box a .thumbnail_img img { width: 192px; height: 192px; }
+}
+
+/* max-width: 1080px */
+@media all and (max-width: 1080px) {
+    /* main_visual */
+    .main_visual { height: 430px; }
+
+    /* quick_menu  */
+    #quick_menu .row { padding: 0 30px; }
+    .quick_menu { background-color: transparent; }
+    .quick_menu nav ul li { width: 100%; height: 90px; line-height: 1.3; font-size: 1.6rem; background-color: #eff4fe; padding: 0 5%; margin: 0 0.8%; }
+    .quick_menu nav ul li a i { top: 0; right: -20px; }
+    .quick_menu nav ul li a:hover i { right: -30px; }
+    .quick_menu nav ul li:first-child a i { top: 10px; right: 0; }
+    .quick_menu nav ul li:first-child a:hover i { right: -10px; }
+
+    /* schedule */
+    .schedule .month ul.month_list li.month_btn a i { font-size: 4.3rem; }
+    .schedule .month ul.month_list li.month_text p em { font-size: 4.5rem; }
+    .schedule .month ul.month_list li.month_text p span { font-size: 4.5rem; }
+    .schedule .show_sched { display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; height: 650px; padding: 70px 0; }
+    .schedule .show_sched .show_sched_list { width: 48%; margin-right: 2%; }
+
+    /* space */
+    .space .space_bottom .space_list .space_list_btn li a { padding: 10px 18px; font-size: 1.7rem; }
+
+    /* center */
+    .center .center_img { width: 43%; }
+
+    /* sns */
+    .sns .sns_bottom .sns_slide_vid .slide_box { margin-right: 45px; }
+    .sns .sns_bottom .sns_slide_vid .slide_box a .thumbnail_img img { width: 168px; height: 168px; }
+}
+
+/* max-width: 1024px */
+@media all and (max-width: 1024px) {    
+    .row { padding: 0 15px; }
+
+    /* main_visual */
+    .main_visual { height: 410px; }
+    .main_visual .main_visual_box img { width: calc(90% - 400px); }
+    .main_visual .main_visual_text h3 { font-size: 6rem; }
+
+    /* schedule */
+    .schedule .month ul.month_list li.month_btn a i { font-size: 4rem; }
+    .schedule .month ul.month_list li.month_text p em { font-size: 4.3rem; }
+    .schedule .month ul.month_list li.month_text p span { font-size: 4.3rem; }
+
+    /* space */
+    .space .space_bottom .space_list .space_list_btn li a { font-size: 1.6rem; }
+
+    /* center */
+    .center .center_img { width: 45%; }
+
+    /* sns */
+    .sns .sns_top { padding: 0 15px; }
+    .sns .sns_bottom .sns_slide_vid { width: 61%; }
+    .sns .sns_bottom .sns_slide_vid .slide_box { margin-right: 41px; }
+
+    /* footer */
+    .footer .footer_top ul.footer_link li a { font-size: 1.3rem; }
+}
+
+/* max-width: 1023px */
+@media all and (max-width: 1023px) {    
+    /* schedule */
+    #schedule { padding: 20% 0 5%; }
+    .schedule ul.more_01 { position: absolute; bottom: 0; left: 0; width: 100%; display: block; font-size: 1.4rem; }
+    .schedule ul.more_01 li a { width: 100%; display: block; color: #333; background-color: #fff; padding: 5px 0; }
+    .schedule ul.more_01 li a:hover { color: #333; }
+    .schedule ul.more_01 li a i { padding-left: 5px; }
+    .schedule .show_sched { padding: 150px 0 15%; height: auto; }
+    .schedule .show_sched .show_sched_list a:after { bottom: 15px; }
+
+    /* space */
+    #space { padding-top: 20%; background-color: #fff; }
+    .space .space_top { text-align: center; } 
+    .space .space_bottom { flex-direction: row; flex-direction: column-reverse; padding-top: 70px; position: relative; }
+    .space .space_bottom .space_list { width: 100%; padding-top: 50px; }
+    .space .space_bottom .space_list .space_list_btn li a { padding: 12px 30px; font-size: 1.9rem; }
+    .space .space_bottom .space_img { width: 100%; }
+    .space .more_01 { display: block; text-align: center; margin-top: 70px; }
+    .space .more_01 li a { width: 100%; display: block; font-size: 1.4rem; color: #333; background-color: #eff4fe; padding: 5px 0; }
+    .space .more_01 li a:hover { color: #333; }
+    .space .more_01 li a i { padding-left: 5px; }
+    .space .more_02 { display: none; }
+
+    /* center */
+    #center { background-color: #fff; margin: 20% 0 0; }
+    .center .center_text { width: 50%; display: flex; flex-direction: column; justify-content: center; }
+    .center .center_img { width: 20%; }
+    .center .center_img img { width: 360px; max-width: 100%; display: block; }
+    .center .more_02 { display: none; }
+    .center + .more_01 { display: block; text-align: center; margin-top: 70px; }
+    .center + .more_01 li a { width: 100%; display: block; font-size: 1.4rem; color: #333; background-color: #eff4fe; padding: 5px 0; }
+    .center + .more_01 li a:hover { color: #333; }
+    .center + .more_01 li a i { padding-left: 5px; }
+
+    /* sns */
+    #sns { margin: 20% 0 0; padding: 0; padding-top: 5%; }
+    #sns .row { padding: 0; }
+    .sns .sns_top .sns_text { text-align: center; }
+    .sns .sns_top .sns_text .section_desc { display: none; }
+    .sns .sns_bottom .sns_slide_vid { width: 98%; padding-top: 70px; }
+    .sns .sns_bottom .sns_slide_vid .slide_box a .thumbnail_img img { width: 400px; height: 400px; }
+    .sns > .more_02 { top: 0; left: 88%; }
+
+    /* new */
+    #new { padding: 20% 0 10%; }
+
+    /* footer */
+    .footer .footer_top ul.footer_etc li ul.sns_link li { padding-right: 20px; }
+}
+
+/* max-width: 1000px */
+@media all and (max-width: 1000px) {    
+    /* main_visual */
+    .main_visual { height: 1000px; }
+    .main_visual .main_visual_box { display: flex; flex-direction: column; }
+    .main_visual .main_visual_box img { width: 70%; position: static; margin: 30px auto 0; }
+    .main_visual .main_visual_text { position: static; width: 100%; display: block; text-align: center; padding-top: 10%; transform: none; }
+    .main_visual .main_visual_text p { font-size: 2.6rem; }
+    .main_visual .main_visual_text h3 { font-size: 8rem; }
+
+    /* quick_menu  */
+    .quick_menu nav ul li:first-child a i { top: 10px; right: -5px; }
+    .quick_menu nav ul li:first-child a:hover i { right: -15px; }
+
+    /* schedule */
+    .schedule .month ul.month_list li.month_btn a i { font-size: 4rem; }
+    .schedule .month ul.month_list li.month_text p em { font-size: 4.2rem; }
+    .schedule .month ul.month_list li.month_text p span { font-size: 4.2rem; }
+
+    /* space */
+    .space .space_bottom .space_list .space_list_btn li a { padding: 12px 28px; font-size: 1.8rem; }
+
+    /* footer  */
+    #footer .row { padding: 0; }
+}
+
+/* max-width: 960px */
+@media all and (max-width: 960px) {    
+    /* scroll_top */
+    .scroll_top a { width: 45px; height: 45px; line-height: 45px; } 
+
+    /* main_visual */
+    .main_visual .main_visual_text p { font-size: 2.5rem; }
+    .main_visual .main_visual_text h3 { font-size: 7.5rem; }
+
+    /* quick_menu  */
+    .quick_menu nav ul li:first-child a i { top: 10px; right: -20px; }
+    .quick_menu nav ul li:first-child a:hover i { right: -30px; }
+
+    /* schedule */
+    .schedule .month ul.month_list li.month_text p em { font-size: 4rem; }
+    .schedule .month ul.month_list li.month_text p span { font-size: 4rem; }
+
+    /* center */
+    .center .center_text { width: 60%;  }
+
+    /* footer  */
+    #footer .row { padding: 0; }
+}
+
+/* max-width: 768px */
+@media all and (max-width: 768px) {    
+    /* main_visual */
+    .main_visual { height: 820px; }
+    .main_visual .main_visual_box img { width: 100%; }
+    .main_visual .main_visual_text { padding-top: 5%; }
+    .main_visual .main_visual_text p { font-size: 2.2rem; }
+    .main_visual .main_visual_text h3 { font-size: 6rem; }
+    .main_visual .main_visual_text h3 br { display: none; }
+
+    /* quick_menu */
+    #quick_menu { top: -50px; }
+    .quick_menu nav ul { flex-wrap: wrap; }
+    .quick_menu nav ul li { width: 48%; }
+    .quick_menu nav ul li:nth-child(3), .quick_menu nav ul li:nth-child(4) { margin-top: 1.6%; }
+    .quick_menu nav ul li a i, .quick_menu nav ul li:first-child a i { top: 0px; right: -20px; }
+    .quick_menu nav ul li a:hover i, .quick_menu nav ul li:first-child a:hover i { right: -30px; }
+    
+    /* schedule */
+    #schedule { padding: 25% 0 5%; }
+    .schedule h3 { font-size: 2.6rem; }
+    .schedule p { display: none; }
+    .schedule .month ul.month_list li.month_btn a i { font-size: 3rem; }
+    .schedule .month ul.month_list li.month_text p em { font-size: 3.2rem; }
+    .schedule .month ul.month_list li.month_text p span { font-size: 3.2rem; }
+    .schedule .show_sched .show_sched_list a div { justify-content: flex-start; padding-top: 30px; }
+    .schedule .show_sched .show_sched_list a ul.sched_img_tit { padding-bottom: 10px; }
+    .schedule .show_sched .show_sched_list a ul.sched_img_tit li.top { 
+        font-size: 1.2rem; display: inline-block; padding: 2% 5.6% 2%; 
+        border: 1px solid #fff; border-radius: 30px; margin-bottom: 10px; 
+    }
+    .schedule .show_sched .show_sched_list a ul.sched_img_tit li.bottom { font-size: 2rem; }
+    .schedule .show_sched .show_sched_list a ul.sched_img_desc { padding-top: 10px; }
+    .schedule .show_sched .show_sched_list a ul.sched_img_desc li { font-size: 1.4rem; text-align: left; padding-left: 10px; }
+    .schedule .show_sched .show_sched_list a ul.sched_img_desc li.bottom { padding-right: 0; }
+    .schedule .show_sched .show_sched_list a ul.sched_img_desc li i { padding-right: 5px; }
+    .schedule .show_sched .show_sched_list a:after { 
+        bottom: 20px; left: 50%; width: 60px; height: 60px; line-height: 60px; 
+        font-size: 1.1rem; transition: none; opacity: 1;
+    }
+
+    /* space */
+    #space { padding-top: 20%; background-color: #fff; }
+    .space .space_top h3 { font-size: 2.6rem; }
+    .space .space_top p { display: none; }
+    .space .space_bottom .space_list { padding-top: 30px; }
+    .space .space_bottom .space_list .space_list_btn:nth-child(2){ padding: 12px 0; }
+    .space .space_bottom .space_list .space_list_btn li a { padding: 10px 20px; font-size: 1.6rem; }
+    .space .more_01 { margin-top: 30px; }
+
+    /* center */
+    .center .center_text h3 { font-size: 2.6rem; }
+    .center .center_text p { font-size: 1.4rem; }
+    .center + .more_01 { margin-top: 30px; }
+
+    /* sns */
+    #sns { margin: 20% 0 0; padding: 0; padding-top: 20%; }
+    #sns .row { padding: 0 15px; }
+    .sns .sns_top { padding: 0; }
+    .sns .sns_top .sns_text .section_tit { font-size: 2.6rem; text-align: left; }
+    .sns .sns_top .sns_text .section_tit br { display: block; }
+    .sns .sns_top .sns_text .section_desc { display: none; }
+    .sns .sns_bottom .sns_slide_vid { width: 100%; padding-top: 30px; }
+    .sns .sns_bottom .sns_slide_vid .slide_box { margin-right: 20px }
+    .sns .sns_bottom .sns_slide_vid .slide_box a .thumbnail_img img { width: 350px; height: 350px; }
+    .sns > .more_01 { display: block; text-align: center; margin-top: 10px; }
+    .sns > .more_01 li a { width: 100%; display: block; font-size: 1.4rem; color: #333; background-color: #eff4fe; padding: 5px 0; border: 1px solid #333; }
+    .sns > .more_01 li a:hover { color: #333; }
+    .sns > .more_01 li a i { padding-left: 5px; }
+    .sns > .more_02 { display: none; }
+
+    /* new */
+    #new { padding: 20% 0 10%; }
+    .new .section_tit { text-align: left; font-size: 2.6rem; }
+    .new .new_list_wrap { padding-top: 50px; }
+    .new .new_list_wrap .notice { overflow: hidden; }
+    .new .new_list_wrap .notice > li { width: 80%; margin-right: 3%; }
+    .new .new_list_wrap .notice > li a p.notice_name { word-break: normal; }
+
+    /* footer  */
+    #footer .row { padding: 0; }
+    .footer .footer_top { height: auto; flex-direction: column; border-bottom: none; }
+    .footer .footer_top ul.footer_link { width: 100%; height: 54px; justify-content: center; align-items: center; border-bottom: 1px solid #484848; }
+    .footer .footer_top ul.footer_etc { flex-direction: column; align-items: center; }
+    .footer .footer_top ul.footer_etc li ul.sns_link { padding-top: 10px;}
+    .footer .footer_top ul.footer_etc li.family_link_wrap { 
+        position: absolute; bottom: 0; left: 50%; transform: translate(-50%, 0); 
+        display: block; padding-bottom: 20px; 
+    }
+    .footer .footer_top ul.footer_etc li .family_link { margin-left: 0; }
+    .footer .footer_bottom { height: 220px; display: flex; flex-direction: column; padding-top: 10px; }
+    .footer .footer_bottom .footer_logo a img { width: 96px; opacity: .5; }
+    .footer .footer_bottom .footer_logo a.gunggido_logo img { width: 52px; margin-left: 5px; }
+    .footer .footer_bottom .footer_address { padding-top: 10px; margin-left: 0; text-align: center; }
+    .footer .footer_bottom .footer_address p { font-size: 1.1rem; }
+    .footer .footer_bottom .footer_vaild { bottom: 18px; }
+}
+
+/* max-width: 486px */
+@media all and (max-width: 486px) {    
+
 }
