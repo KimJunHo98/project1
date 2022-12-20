@@ -53,7 +53,6 @@
     .schedule .month ul.month_list li.month_text p span { font-size: 5.4rem; }
     .schedule .month ul.month_list li.month_text p span::after { content: "."; display: inline-block; padding-right: 10px; }
     .schedule .month ul.day_list { display: none; }
-    .schedule .show_sched .show_sched_list { width: 30%; margin-right: 5%; }
 
     /* space */
     .space .space_bottom { padding-top: 40px; }
@@ -76,7 +75,6 @@
     .schedule .month ul.month_list li.month_btn a i { font-size: 4.8rem; }
     .schedule .month ul.month_list li.month_text p em { font-size: 5rem; }
     .schedule .month ul.month_list li.month_text p span { font-size: 5rem; }
-    .schedule .show_sched .show_sched_list { width: 30%; margin-right: 5%; }
 
     /* space */
     .space .space_bottom .space_list .space_list_btn:nth-child(2){ padding: 28px 0; }
@@ -103,8 +101,9 @@
     .schedule .month ul.month_list li.month_btn a i { font-size: 4.3rem; }
     .schedule .month ul.month_list li.month_text p em { font-size: 4.5rem; }
     .schedule .month ul.month_list li.month_text p span { font-size: 4.5rem; }
-    .schedule .show_sched { display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; height: 650px; padding: 70px 0; }
-    .schedule .show_sched .show_sched_list { width: 48%; margin-right: 2%; }
+    .schedule .show_sched { height: 600px;  }
+    .schedule .show_sched .show_sched_list { width: 300px; }
+    .schedule .show_sched .show_sched_list a:after { bottom: 30px; }
 
     /* space */
     .space .space_bottom .space_list .space_list_btn li a { padding: 10px 18px; font-size: 1.7rem; }
@@ -115,6 +114,10 @@
     /* sns */
     .sns .sns_bottom .sns_slide_vid .slide_box { margin-right: 45px; }
     .sns .sns_bottom .sns_slide_vid .slide_box a .thumbnail_img img { width: 168px; height: 168px; }
+
+    /* new */
+    .new .new_list_wrap .notice { overflow: hidden; }
+    .new .new_list_wrap .notice > li { width: 48%; margin-right: 2%; }
 }
 
 /* max-width: 1024px */
@@ -154,7 +157,7 @@
     .schedule ul.more_01 li a { width: 100%; display: block; color: #333; background-color: #fff; padding: 5px 0; }
     .schedule ul.more_01 li a:hover { color: #333; }
     .schedule ul.more_01 li a i { padding-left: 5px; }
-    .schedule .show_sched { padding: 150px 0 15%; height: auto; }
+    .schedule .show_sched { padding: 150px 0; height: 100%; }
     .schedule .show_sched .show_sched_list a:after { bottom: 15px; }
 
     /* space */
@@ -239,9 +242,12 @@
     /* schedule */
     .schedule .month ul.month_list li.month_text p em { font-size: 4rem; }
     .schedule .month ul.month_list li.month_text p span { font-size: 4rem; }
+    .schedule .show_sched { overflow: hidden; }
+    .schedule .show_sched .show_sched_list { width: 40%; margin-right: 4%; flex-shrink: 0; }
+    .schedule .show_sched .show_sched_list a:after { bottom: 30px; }
 
     /* center */
-    .center .center_text { width: 60%;  }
+    .center .center_text { width: 60%; }
 
     /* footer  */
     #footer .row { padding: 0; }
@@ -249,6 +255,10 @@
 
 /* max-width: 768px */
 @media all and (max-width: 768px) {    
+    /* popup */
+    #popup { width: 400px; height: 400px; font-size: 2rem; top: 100px; left: 100px; }
+    #popup button { font-size: 3rem; }
+
     /* main_visual */
     .main_visual { height: 820px; }
     .main_visual .main_visual_box img { width: 100%; }
@@ -261,7 +271,7 @@
     #quick_menu { top: -50px; }
     .quick_menu nav ul { flex-wrap: wrap; }
     .quick_menu nav ul li { width: 48%; }
-    .quick_menu nav ul li:nth-child(3), .quick_menu nav ul li:nth-child(4) { margin-top: 1.6%; }
+    .quick_menu nav ul li:nth-child(3), .quick_menu nav ul li:nth-child(4) { margin-top: 2.6%; }
     .quick_menu nav ul li a i, .quick_menu nav ul li:first-child a i { top: 0px; right: -20px; }
     .quick_menu nav ul li a:hover i, .quick_menu nav ul li:first-child a:hover i { right: -30px; }
     
@@ -272,7 +282,8 @@
     .schedule .month ul.month_list li.month_btn a i { font-size: 3rem; }
     .schedule .month ul.month_list li.month_text p em { font-size: 3.2rem; }
     .schedule .month ul.month_list li.month_text p span { font-size: 3.2rem; }
-    .schedule .show_sched .show_sched_list a div { justify-content: flex-start; padding-top: 30px; }
+    .schedule .show_sched { padding: 90px 0; }
+    .schedule .show_sched .show_sched_list { width: 270px; margin-right: 5%; }
     .schedule .show_sched .show_sched_list a ul.sched_img_tit { padding-bottom: 10px; }
     .schedule .show_sched .show_sched_list a ul.sched_img_tit li.top { 
         font-size: 1.2rem; display: inline-block; padding: 2% 5.6% 2%; 
@@ -345,7 +356,25 @@
     .footer .footer_bottom .footer_vaild { bottom: 18px; }
 }
 
+/* max-width: 690px */
+@media all and (max-width: 690px) {   
+
+}
+
 /* max-width: 486px */
 @media all and (max-width: 486px) {    
+    /* popup */
+    #popup { width: 350px; height: 350px; font-size: 1.6rem; top: 80px; left: 80px; padding: 30px; }
+    #popup button { font-size: 2.6rem; }
+
+    /* main_visual */
+    .main_visual { height: 690px; }
+
+    /* schedule */
+    .schedule .show_sched { padding: 60px 0; }
+}
+
+/* max-width: 375px */
+@media all and (max-width: 375px) {   
 
 }

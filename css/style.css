@@ -19,12 +19,9 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 #popup { 
     position: fixed; width: 500px; height: 500px; background-color: #eff4fe; box-shadow: 3px 3px 10px rgba(0,0,0,.4); 
     border-radius: 30px; z-index: 9999; font-size: 2.4rem; padding: 50px; box-sizing: border-box; line-height: 2; 
-    top: 150px; left: 150px; font-family: "GmarketSansMedium", sans-serif; 
+    top: 150px; left: 150px; font-family: "GmarketSansMedium", sans-serif; color: #000;
 }
-#popup button { 
-    cursor: pointer;  color: #134aa9; 
-    position: absolute; right: 20px; bottom: 20px; font-size: 3.4rem; 
-}
+#popup button { cursor: pointer; color: #134aa9; background-color: transparent; position: absolute; right: 20px; bottom: 20px; font-size: 3.4rem; }
 
 /* mobile_menu */
 .m_gnb { display: none; }
@@ -130,8 +127,8 @@ main { display: block; position: relative; }
 .schedule ul.more_01 { display: flex; flex-direction: row-reverse; font-size: 1.6rem; }
 .schedule ul.more_01 li a { color: #fff; }
 .schedule ul.more_01 li a:hover { color: #94c8fb; }
-.schedule .show_sched { display: flex; flex-direction: row; justify-content: space-evenly; width: 100%; height: 650px; padding: 70px 0; }
-.schedule .show_sched .show_sched_list { width: 28%; margin-right: 8%; position: relative; }
+.schedule .show_sched { display: flex; flex-direction: row; justify-content: space-around; width: 100%; height: 650px; padding: 70px 0; }
+.schedule .show_sched .show_sched_list { width: 340px; position: relative; }
 .schedule .show_sched .show_sched_list:last-child { margin-right: 0; }
 .schedule .show_sched .show_sched_list img { width: 100%; height: 100%; border-radius: 15px; display: block; }
 .schedule .show_sched .show_sched_list a { 
@@ -227,7 +224,7 @@ main { display: block; position: relative; }
 .new .section_tit { color: #333; }
 .new .new_list_wrap { width: 100%; padding-top: 70px; }
 .new .new_list_wrap .notice { width: 100%; height: 100%; display: flex; flex-direction: row; }
-.new .new_list_wrap .notice > li { width: 31.3%; margin-right: 3%; background-color: #fff;  }
+.new .new_list_wrap .notice > li { width: 31.3%; margin-right: 3%; background-color: #fff; }
 .new .new_list_wrap .notice > li:last-child { margin-right: 0; }
 .new .new_list_wrap .notice > li a { padding: 50px 40px 80px; display: block; width: 100%; }
 .new .new_list_wrap .notice > li a p.notice_type { color: #ababab; font-size: 1.8rem; }
@@ -265,7 +262,8 @@ main { display: block; position: relative; }
     width: 195px; height: 40px; padding-left: 10px; display: flex; justify-content: space-between; align-items: center; 
     color: #7b7b7b; border: 1px solid #4b4b4b; font-family: 'Noto Sans KR', sans-serif; font-size: 1.4rem; 
 }
-.footer .footer_top ul.footer_etc li .family_link a:hover + .family_link_list { display: block; }
+.footer .footer_top ul.footer_etc li .family_link a:hover + .family_link_list,
+.footer .footer_top ul.footer_etc li .family_link a:focus + .family_link_list { display: block; }
 .footer .footer_top ul.footer_etc li .family_link a i { padding-right: 5px; }
 .footer .footer_top ul.footer_etc li .family_link .family_link_list { position: absolute; top: -80px; left: 0; display: none; }
 .footer .footer_top ul.footer_etc li .family_link .family_link_list li a { border-bottom: none; border-color: #484848; color: #fff; background-color: #333; }
