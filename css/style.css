@@ -15,14 +15,6 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 }
 #skip a:focus { top: 0; z-index: 999; }
 
-/* popup */
-#popup { 
-    position: fixed; width: 500px; height: 500px; background-color: #eff4fe; box-shadow: 3px 3px 10px rgba(0,0,0,.4); 
-    border-radius: 30px; z-index: 9999; font-size: 2.4rem; padding: 50px; box-sizing: border-box; line-height: 2; 
-    top: 150px; left: 150px; font-family: "GmarketSansMedium", sans-serif; color: #000;
-}
-#popup button { cursor: pointer; color: #134aa9; background-color: transparent; position: absolute; right: 20px; bottom: 20px; font-size: 3.4rem; }
-
 /* mobile_menu */
 .m_gnb { display: none; }
 .m_gnb a { width: 30px; height: 50px; font-size: 30px; display: flex; align-items: center; color: #134aa9; }
@@ -99,6 +91,7 @@ main { display: block; position: relative; }
     font-size: 2.4rem; text-align: center; display: flex; justify-content: space-around; align-items: center;
 }
 .quick_menu nav ul li a { color: #333; position: relative; }
+.quick_menu nav ul li a br { display: none; }
 .quick_menu nav ul li a i { position: absolute; top: 5px; right: -30px; transition: all .3s cubic-bezier(0.25, 0.1, 0.92, 0.92); }
 .quick_menu nav ul li a:hover { color: #134aa9; }
 .quick_menu nav ul li a:hover i { right: -40px; }
