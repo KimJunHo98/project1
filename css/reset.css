@@ -28,6 +28,7 @@
 
 /* 스크롤 초기화 */
 html { overflow-x: hidden; overflow-y: scroll; }
+body { overflow-x: hidden; }
 
 /* 폰트 초기화 */
 html { font-size: 62.5%; /* 1rem = 10px */ }
