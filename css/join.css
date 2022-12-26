@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+body { color: #004071; font-family: "Noto Sans KR", sans-serif; background-color: #fff; }
+
+/* 가운데 영역 */
+.container { width: 1400px; margin: 0 auto; position: relative; }
+
+/* 로우 영역 */
+.row { padding: 0 15px; }
+
+/* header */
+#header { width: 100%; background-color: #004071; }
+.header { width: 100%; height: 70px; }
+.header h1 { text-align: center; padding-top: 12px; }
+.header h1 a { width: 100%; display: inline-block; }
+.header h1 a img { width: 80px; }
+
+/* join */
+#join { width: 100%; margin: 40px 0; }
+.join { width: 100%; }
+.join .join_header { width: 100%; border-bottom: 2px solid #004071; padding-bottom: 15px; }
+.join .join_header h2 { font-size: 2rem; color: #004071; font-weight: 500; text-align: center; margin-bottom: 15px; }
+.join .join_header .step { width: 100%; display: flex; flex-direction: row; justify-content: center; }
+.join .join_header .step li { width: 12px; height: 12px; border: 1px solid #004071; background-color: #fff; border-radius: 30px; margin-right: 8px; }
+.join .join_header .step li.on { background-color: #004071; }
+.join .join_header p { font-size: 1.4rem; text-align: right; }
+.join .join_header p .mark { color: #f90; margin-right: 5px; }

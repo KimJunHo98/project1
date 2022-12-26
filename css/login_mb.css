@@ -6,7 +6,7 @@ body { color: #004071; font-family: "Noto Sans KR", sans-serif; background-color
 .container { width: 1400px; margin: 0 auto; position: relative; }
 
 /* 로우 영역 */
-.row { padding: 0 20px; }
+.row { padding: 0 15px; }
 
 /* header */
 #header { width: 100%; }
@@ -59,11 +59,11 @@ body { color: #004071; font-family: "Noto Sans KR", sans-serif; background-color
 #footer { width: 100%; background-color: #f1f1f1; }
 .footer { width: 100%; height: 100%; }
 .footer .footer_top .footer_agency_list { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; padding: 0 10px 20px; }
-.footer .footer_top .footer_agency_list > li { width: 48%; padding-right: 10px; margin-top: 20px; }
+.footer .footer_top .footer_agency_list > li { width: 50%; padding-right: 10px; margin-top: 20px; }
 .footer .footer_top .footer_agency_list > li a { color: #004071; font-size: 1.3rem; font-weight: 500; }
 .footer .footer_top .footer_agency_list > li:nth-child(6n) { padding-right: 0; }
 .footer .footer_top .footer_agency_list > li ul { width: 100%; display: inline-block; }
-.footer .footer_top .footer_agency_list > li ul li { color: #888; font-size: 1.4rem; }
+.footer .footer_top .footer_agency_list > li ul li { color: #888; font-size: 1.3rem; }
 .footer .footer_btm { border-top: 1px solid #ccc; padding: 20px 5px; }
 .footer .footer_btm .footer_copy ul { display: flex; flex-direction: row; justify-content: center; }
 .footer .footer_btm .footer_copy ul li { font-size: 1.3rem; color: #888; padding-right: 10px; }

@@ -4,3 +4,18 @@
 @media all and (max-width: 1400px) {
     .container { width: 100%; }
 }
+
+/* max-width: 768px */
+@media all and (max-width: 768px) {
+    /* header */
+    .header .join li a { font-size: 1.5rem; }
+
+    /* footer */
+    .footer .footer_top .footer_agency_list { line-height: 1.6; }
+}
+
+/* max-width: 400px */
+@media all and (max-width: 400px) {
+    /* footer */
+    .footer .footer_btm .footer_copy ul { flex-direction: column; align-items: center; }
+}
