@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8"> 
+    <!-- 익스 호환성 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <!-- 반응형 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robot" content="follow">
+    <meta name="description" content="지지씨 멤버스 로그인 페이지 pc버전입니다.">
+    <meta name="author" content="김준호">
+    <meta name="keyword" content="지지씨 멤버스 로그인, 아이디, 비밀번호">
+    <meta property="og:title" content="경기생활문화센터">
+    <meta property="og:url" content="https://github.com/KimJunHo98/project1">
+    <meta property="og:type" content="website">
+    <meta property="og:image:url" content="img/ogimage.jpg">
+    <meta property="og:image" content="img/ogimage.jpg">
+    <meta property="og:description" content="김준호 반응형 프로젝트">
+    <title>경기도의 문화예술을 즐기는 새로운 방법, 지지씨 멤버스</title>
+    
+    <!-- xeicon -->
+    <link rel="stylesheet" href="XEIcon/xeicon.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login_pc.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body>
+    <div class="wrap">
+        <!-- header -->
+        <header id="header">
+            <h2 class="ir_so">회원가입</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="header">
+                        <ul class="join">
+                            <li><a href="#" class="join_link">회원가입<i class="xi-angle-right"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- //header -->
+        <!-- login -->
+        <section id="login_wrap">
+            <h2 class="ir_so">로그인</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="login">
+                        <h1 class="login_logo"><a href="#"><img src="img/login-logo.png" alt="지지씨 멤버스"></a></h1>
+                        <div class="login_text">
+                            <h2 class="login_tit">지지씨 멤버스에 오신 것을 환영합니다!</h2>
+                            <p class="login_desc">
+                                경기문화재단 및 지지씨 기존 회원분들께서는 회원가입시 추가정보 입력을 통해<br> 간단히 통합회원으로 가입하실 수 있습니다.
+                            </p>
+                        </div>
+                        <div class="login_form_wrap">
+                            <form action="#" method="post" class="login_form_content">
+                                <fieldset>
+                                    <legend class="ir_so">로그인</legend>
+                                    <div class="login_form">
+                                        <div class="login_form_top">
+                                            <div class="login_email">
+                                                <label for="user_email" class="ir_so">이메일</label>
+                                                <input type="email" id="user_email" name="user_email" placeholder="이메일" maxlength="40">
+                                            </div>
+                                            <div class="login_password">
+                                                <label for="user_pw" class="ir_so">비밀번호</label>
+                                                <input type="password" id="user_pw" name="user_pw" placeholder="비밀번호" maxlength="40">
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="login_btn">로그인</button>
+                                        <div class="login_form_btm">
+                                            <div class="login_checkbox">
+                                                <div class="login_status">
+                                                    <input type="checkbox" id="status" name="status" class="check">
+                                                    <label for="status">로그인상태 유지</label>
+                                                </div>
+                                                <div class="remember_id">
+                                                    <input type="checkbox" id="remember" name="remember" class="check">
+                                                    <label for="remember">아이디 저장</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="login_find">
+                            <ul>
+                                <li class="find_email"><a href="#">아이디(비밀번호) 찾기</a></li>
+                                <li class="find_pw"><a href="#">비밀번호 찾기</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- //login -->
+        <!-- footer -->
+        <footer id="footer">
+            <h2 class="ir_so">푸터</h2>
+            <div class="row">
+                <div class="footer">
+                    <div class="footer_top">
+                        <ul class="footer_agency_list">
+                            <li>
+                                <a href="http://ggcf.kr" target="_blank">경기문화재단</a>
+                                <ul>
+                                    <li>(16614) 경기도 수원시 권선구 서둔로 166</li>
+                                    <li>Tel. 031-231-7200</li>
+                                    <li>사업자번호. 135-82-06932</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://gjicp.ggcf.kr" target="_blank">경기문화재연구원</a>
+                                <ul>
+                                    <li>(16488) 경기도 수원시 팔달구 인계로 178(인계동) 4~5층</li>
+                                    <li>Tel. 031-231-8551</li>
+                                    <li>사업자번호. 135-82-10625</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://ggcf.kr" target="_blank">경기문화재단 인계동사무소</a>
+                                <ul>
+                                    <li>경기도 수원시 팔달구 인계로 178</li>
+                                    <li>Tel. 031-231-7200</li>
+                                    <li>사업자번호. 524-82-00235</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://musenet.ggcf.kr/" target="_blank">경기도박물관</a>
+                                <ul>
+                                    <li>(17072) 경기도 용인시 기흥구 상갈로 6(상갈동) </li>
+                                    <li>Tel. 031-288-5300</li>
+                                    <li>사업자번호. 142-82-01158</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://gmoma.ggcf.kr" target="_blank">경기도미술관</a>
+                                <ul>
+                                    <li>(15385) 경기도 안산시 단원구 동산로 268 (초지동)</li>
+                                    <li>Tel. 031-481-7000</li>
+                                    <li>사업자번호. 134-82-08484</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://njp.ggcf.kr" target="_blank">백남준아트센터</a>
+                                <ul>
+                                    <li>(17068) 경기도 용인시 기흥구 백남준로 10 (상갈동)</li>
+                                    <li>Tel. 031-201-8500</li>
+                                    <li>사업자번호. 142-82-01181</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://silhak.ggcf.kr" target="_blank">실학박물관</a>
+                                <ul>
+                                    <li>(12283) 경기도 남양주시 조안면 다산로747번길 16</li>
+                                    <li>Tel. 031-579-6000</li>
+                                    <li>사업자번호. 132-82-09361</li>
+                                    <li>통신판매업신고. 제 2014-경기남양주-0426호</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://jgpm.ggcf.kr " target="_blank">전곡선사박물관</a>
+                                <ul>
+                                    <li>(11027) 경기도 연천군 전곡읍 평화로 443번길 2</li>
+                                    <li>Tel. 031-830-5600</li>
+                                    <li>사업자번호. 127-82-19270</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://gcm.ggcf.kr" target="_blank">경기도어린이박물관</a>
+                                <ul>
+                                    <li>(17072) 경기도 용인시 기흥구 상갈로 6 (상갈동)</li>
+                                    <li>Tel. 031-270-8600</li>
+                                    <li>사업자번호. 142-82-02652</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://gcc.ggcf.kr" target="_blank">경기창작센터</a>
+                                <ul>
+                                    <li>(15651) 경기도 안산시 단원구 선감로 101-19 (선감동)</li>
+                                    <li>Tel. 032-890-4821</li>
+                                    <li>사업자번호. 134-82-08688</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="http://sscampus.ggcf.kr" target="_blank">경기상상캠퍼스</a>
+                                <ul>
+                                    <li>(16614) 경기도 수원시 권선구 서둔로 166</li>
+                                    <li>Tel. 031-296-1980</li>
+                                    <li>사업자번호. 135-82-06932</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="https://ngcm.ggcf.kr/" target="_blank">경기북부어린이박물관</a>
+                                <ul>
+                                    <li>(11307) 경기도 동두천시 평화로 2910번길 46</li>
+                                    <li>Tel. 031-868-9610</li>
+                                    <li>사업자번호. 142-82-02652</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer_btm">
+                        <div class="footer_copy">
+                            <ul>
+                                <li>대표이사 강헌</li>
+                                <li>COPYRIGHT©GGCF. ALL RIGHTS RESERVED.</li>
+                            </ul>
+                        </div>
+                        <div class="footer_link">
+                            <ul>
+                                <li><a href="#">개인정보처리방침</a></li>
+                                <li><a href="#">멤버쉽 이용약관</a></li>
+                                <li><a href="login_mb.html">Mobile버전</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+    </div>
+</body>
+</html>

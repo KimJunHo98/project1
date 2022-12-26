@@ -21,6 +21,35 @@
     .new .new_list_wrap .notice > li a p.notice_name { height: 60px; font-size: 2rem; line-height: 30px; margin: 10px 0 30px; }
     .new .new_list_wrap .notice > li a { padding: 35px 30px 60px; }
     .new .new_list_wrap .notice > li a p.notice_cont { margin-bottom: 60px; }
+
+    /*------------------------- bg obj animation --------------------------*/
+    /* obj2 */
+    #schedule .obj2 { transform: translate(-960px, -1500px); }
+    @keyframes bg-move02 {
+        from {
+            transform: translate(-960px, -1500px);
+        }
+        to {
+            transform: translate(-960px, -1450px);
+        }
+    }
+
+    /* obj3 */
+    #space .obj3 { transform: translate(100px, -390px); }
+    @keyframes bg-move03 {
+        from {
+            transform: translate(100px, -390px);
+        }
+        to {
+            transform: translate(300px, -390px);
+        }
+    }
+
+    /* obj4 */
+    #space .obj4 { width: 450px; height: 450px; }
+
+    /* obj5 */
+    #sns .obj5 { width: 450px; height: 450px;  transform: translate(500px, -500px); }
 }
 
 /* max-width: 1280px */
@@ -81,6 +110,29 @@
 
     /* sns */
     .sns .sns_bottom .sns_slide_vid .slide_box a .thumbnail_img img { width: 192px; height: 192px; }
+
+    /*------------------------- bg obj animation --------------------------*/
+    /* obj2 */
+    #schedule .obj2 { transform: translate(-920px, -1500px); }
+    @keyframes bg-move02 {
+        from {
+            transform: translate(-920px, -1500px);
+        }
+        to {
+            transform: translate(-920px, -1450px);
+        }
+    }
+
+    /* obj3 */
+    #space .obj3 { transform: translate(100px, -350px); }
+    @keyframes bg-move03 {
+        from {
+            transform: translate(100px, -350px);
+        }
+        to {
+            transform: translate(300px, -350px);
+        }
+    }
 }
 
 /* max-width: 1080px */
@@ -150,6 +202,29 @@
 
     /* footer */
     .footer .footer_top ul.footer_link li a { font-size: 1.3rem; }
+
+    /*------------------------- bg obj animation --------------------------*/
+    /* obj3 */
+    #space .obj3 { transform: translate(100px, -760px); }
+    @keyframes bg-move03 {
+        from {
+            transform: translate(100px, -760px);
+        }
+        to {
+            transform: translate(300px, -760px);
+        }
+    }
+
+    /* obj4 */
+    #space .obj4 { transform: translate(100px, 200px); }
+    @keyframes bg-move04 {
+        from {
+            transform: translate(100px, 200px);
+        }
+        to {
+            transform: translate(100px, 480px);
+        }
+    }
 }
 
 /* max-width: 1023px */
@@ -223,6 +298,29 @@
 
     /* footer  */
     #footer .row { padding: 0; }
+
+    /*------------------------- bg obj animation --------------------------*/
+    /* obj3 */
+    #space .obj3 { transform: translate(100px, -730px); }
+    @keyframes bg-move03 {
+        from {
+            transform: translate(100px, -730px);
+        }
+        to {
+            transform: translate(300px, -730px);
+        }
+    }
+
+    /* obj4 */
+    #space .obj4 { transform: translate(100px, 200px); }
+    @keyframes bg-move04 {
+        from {
+            transform: translate(100px, 200px);
+        }
+        to {
+            transform: translate(100px, 430px);
+        }
+    }
 }
 
 /* max-width: 960px */
@@ -250,6 +348,12 @@
 
     /* footer  */
     #footer .row { padding: 0; }
+
+    /*------------------------- bg obj animation --------------------------*/
+    /* obj3 */
+    #space .obj3 { display: none; }
+    /* obj4 */
+    #space .obj4 { display: none; }
 }
 
 /* max-width: 768px */
@@ -354,6 +458,20 @@
     .footer .footer_bottom .footer_address { padding-top: 10px; margin-left: 0; text-align: center; }
     .footer .footer_bottom .footer_address p { font-size: 1.1rem; }
     .footer .footer_bottom .footer_vaild { bottom: 18px; }
+
+    /*------------------------- bg obj animation --------------------------*/
+    #new .obj7 { 
+        width: 300px; height: 200px; transform: translate(-100px, 120px); 
+        animation: bg-move07 3s linear 0s infinite alternate;
+    }
+    @keyframes bg-move07 {
+        from {
+            transform: translate(-110px, 120px);
+        }
+        to {
+            transform: translate(-40px, 120px);
+        }
+    }
 }
 
 /* max-width: 690px */
@@ -425,6 +543,17 @@
 
     /* footer */
     .footer .footer_top ul.footer_link li a { font-size: 1rem; }
+
+    /*------------------------- bg obj animation --------------------------*/
+    #new .obj7 { transform: translate(-100px, 100px); }
+    @keyframes bg-move07 {
+        from {
+            transform: translate(-110px, 100px);
+        }
+        to {
+            transform: translate(-40px, 100px);
+        }
+    }
 }
 
 /* max-width: 375px */

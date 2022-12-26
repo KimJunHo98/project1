@@ -17,9 +17,9 @@
     position: absolute; top: 50%; left: 50%; display: inline-block; transform: translate(100px, -440px);
     animation: bg-move03 10s linear 0s infinite alternate;
 }
-#center .obj4 { 
+#space .obj4 { 
     background: url("../img/main-bg-o.svg") no-repeat 0 0/contain; width: 500px; height: 500px; 
-    position: absolute; top: 50%; left: 50%; display: inline-block; transform: translate(100px, -400px);
+    position: absolute; top: 50%; left: 50%; display: inline-block; transform: translate(100px, 160px);
     animation: bg-move04 2s linear 0s infinite alternate;
 }
 #sns .obj5 { 
@@ -65,10 +65,10 @@
 }
 @keyframes bg-move04 {
     from {
-        transform: translate(100px, -400px);
+        transform: translate(100px, 160px);
     }
     to {
-        transform: translate(100px, -500px);
+        transform: translate(100px, 300px);
     }
 }
 @keyframes bg-move05 {
@@ -95,82 +95,3 @@
         transform: translate(350px, -80px);
     }
 }
-
-/*---------------------------------- ani mediaQuery --------------------------------------*/
-@media all and (max-width: 1400px) {
-    /* obj2 */
-    #schedule .obj2 { transform: translate(-960px, -1500px); }
-    @keyframes bg-move02 {
-        from {
-            transform: translate(-960px, -1500px);
-        }
-        to {
-            transform: translate(-960px, -1450px);
-        }
-    }
-
-    /* obj3 */
-    #space .obj3 { transform: translate(100px, -390px); }
-    @keyframes bg-move03 {
-        from {
-            transform: translate(100px, -390px);
-        }
-        to {
-            transform: translate(300px, -390px);
-        }
-    }
-
-    /* obj4 */
-    #center .obj4 { width: 450px; height: 450px; transform: translate(100px, -400px); }
-
-    /* obj5 */
-    #sns .obj5 { width: 450px; height: 450px;  transform: translate(500px, -500px); }
-}
-
-@media all and (max-width: 1200px) { 
-    /* obj2 */
-    #schedule .obj2 { transform: translate(-920px, -1500px); }
-    @keyframes bg-move02 {
-        from {
-            transform: translate(-920px, -1500px);
-        }
-        to {
-            transform: translate(-920px, -1450px);
-        }
-    }
-
-    /* obj3 */
-    #space .obj3 { transform: translate(100px, -350px); }
-    @keyframes bg-move03 {
-        from {
-            transform: translate(100px, -350px);
-        }
-        to {
-            transform: translate(300px, -350px);
-        }
-    }
-}  
-
-@media all and (max-width: 1023px) { 
-    /* obj3 */
-    #space .obj3 { transform: translate(100px, -760px); }
-    @keyframes bg-move03 {
-        from {
-            transform: translate(100px, -760px);
-        }
-        to {
-            transform: translate(300px, -760px);
-        }
-    }
-
-     /* obj4 */
-    #center .obj4 { transform: translate(100px, -600px); }
-    @keyframes bg-move04 {
-        from {
-            transform: translate(100px, -600px);
-        }
-        to {
-            transform: translate(100px, -810px);
-        }
-    }
-}  

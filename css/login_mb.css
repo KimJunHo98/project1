@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+body { color: #004071; font-family: "Noto Sans KR", sans-serif; background-color: #fff; }
+
+/* 가운데 영역 */
+.container { width: 1400px; margin: 0 auto; position: relative; }
+
+/* 로우 영역 */
+.row { padding: 0 20px; }
+
+/* header */
+#header { width: 100%; }
+.header { width: 100%; height: 70px; display: flex; justify-content: flex-end; align-items: center; }
+.header .join li a { font-size: 1.6rem; color: #004071; }
+.header .join li a i { vertical-align: middle; padding-left: 10px; opacity: 0.3; }
+
+/* login */
+#login_wrap { width: 100%; padding-bottom: 70px; }
+.login { width: 100%; height: 100%; }
+.login h1 { text-align: center; }
+.login h1 img { border: 0 none; width: 90px; }
+.login .login_text .login_tit { text-align: center; color: #004071; font-size: 2rem; margin-bottom: 12px; }
+.login .login_text .login_desc { font-size: 1.4rem; line-height: 21px; text-align: center; padding: 0 5px; margin-bottom: 50px; }
+.login .login_text .login_desc br { display: none; }
+.login .login_form_wrap { width: 100%; height: 100%; }
+.login .login_form_wrap .login_form { width: 100%; }
+.login .login_form_wrap .login_form .login_form_top { margin-bottom: 20px; }
+.login .login_form_wrap .login_form .login_form_top input { 
+    border: none; width: 100%; height: 30px; border-bottom: 1px solid #004071;
+    font-size: 1.4rem; margin-bottom: 40px; outline: 0 none; padding: 0 0 5px 10px;
+}
+.login .login_form_wrap .login_form .login_btn { 
+    width: 200px; display: block; margin: 0 auto; background-color: #004071; color: #fff; 
+    padding: 8px 0; font-size: 1.8rem; border-radius: 30px; margin-bottom: 15px;
+}
+.login .login_form_wrap .login_form .login_form_btm .login_checkbox { display: flex; flex-direction: row; justify-content: center; }
+.login .login_form_wrap .login_form .login_form_btm .login_checkbox > div { padding-right: 40px; }
+.login .login_form_wrap .login_form .login_form_btm .login_checkbox > div:last-child { padding-right: 0; }
+.login .login_form_wrap .login_form .login_form_btm .login_checkbox > div input.check + label { font-size: 1.4rem; position: relative; color: #555; }
+.login .login_form_wrap .login_form .login_form_btm .login_checkbox > div input.check + label::before { 
+    content: ''; display: inline-block; width: 14px; height: 14px; position: absolute; top: 3px; left: -22px;
+    background: url("../img/ico_chk_type1_unchecked.png") no-repeat 0 0/14px; 
+}
+.login .login_form_wrap .login_form .login_form_btm .login_checkbox > div input:checked + label::before { 
+    background: url("../img/ico_chk_type1_checked.png") no-repeat 0 0/14px;  
+}
+.login .login_form_wrap .login_form .login_form_btm .login_checkbox > div input.check { display: none; }
+.login .login_find { width: 100%; height: 100%; margin-top: 20px; }
+.login .login_find ul { display: flex; flex-direction: row; justify-content: center; }
+.login .login_find ul li { font-size: 1.4rem; padding: 0 20px 0 21px; position: relative; }
+.login .login_find ul li.find_email { padding: 0; }
+.login .login_find ul li.find_pw::before { 
+    content: ""; position: absolute; top: 6px; left: 10px; display: block; 
+    width: 1px; height: 14px; background-color: #333; 
+}
+.login .login_find ul li a { color: #004071; }
+
+/* footer */
+#footer { width: 100%; background-color: #f1f1f1; }
+.footer { width: 100%; height: 100%; }
+.footer .footer_top .footer_agency_list { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: space-between; padding: 0 10px 20px; }
+.footer .footer_top .footer_agency_list > li { width: 48%; padding-right: 10px; margin-top: 20px; }
+.footer .footer_top .footer_agency_list > li a { color: #004071; font-size: 1.3rem; font-weight: 500; }
+.footer .footer_top .footer_agency_list > li:nth-child(6n) { padding-right: 0; }
+.footer .footer_top .footer_agency_list > li ul { width: 100%; display: inline-block; }
+.footer .footer_top .footer_agency_list > li ul li { color: #888; font-size: 1.4rem; }
+.footer .footer_btm { border-top: 1px solid #ccc; padding: 20px 5px; }
+.footer .footer_btm .footer_copy ul { display: flex; flex-direction: row; justify-content: center; }
+.footer .footer_btm .footer_copy ul li { font-size: 1.3rem; color: #888; padding-right: 10px; }
+.footer .footer_btm .footer_link ul { width: 100%; display: flex; flex-direction: row; justify-content: center; }
+.footer .footer_btm .footer_link ul li a { font-size: 1.5rem; color: #004071; padding-right: 21px; position: relative; }
+.footer .footer_btm .footer_link ul li:first-child a { font-weight: bold; }
+.footer .footer_btm .footer_link ul li a::after { 
+    content: ""; display: block; width: 1px; height: 15px; position: absolute; 
+    top: 5px; right: 10px; background-color: #004071; 
+}
+.footer .footer_btm .footer_link ul li:last-child a:after { display: none; }
