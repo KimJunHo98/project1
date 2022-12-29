@@ -45,8 +45,7 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 }
 .header .nav .gnb > li > a:hover { color: #333; }
 .header .nav .gnb > li > ul.sub_menu { position: absolute; left: 0; top: 190%; text-align-last: left; padding: 30px 0; z-index: 9; }
-.header .nav .gnb > li > ul.sub_menu > li { display: none; }
-.header .nav .gnb > li > ul.sub_menu > li { padding: 10px 0; }
+.header .nav .gnb > li > ul.sub_menu > li { display: none; padding: 10px 0; }
 .header .nav .gnb > li > ul.sub_menu > li a { 
     font-size: 1.8rem; font-weight: 400; color: #333; display: block; 
     width: 100%; white-space: nowrap; transition: all .3s ease-in; 
