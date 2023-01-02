@@ -1,7 +1,8 @@
 /* popup */
 #popup { 
-    position: fixed; width: 500px; height: 500px; background-color: #eff4fe; box-shadow: 3px 3px 10px rgba(0,0,0,.4); 
-    border-radius: 20px; z-index: 9999; font-size: 2.4rem; padding: 50px; box-sizing: border-box; line-height: 2; 
+    position: fixed; width: 500px; height: 500px; background: linear-gradient(to bottom, #134aa9 12%, #eff4fe 12%, #eff4fe 100%); box-shadow: 3px 3px 10px rgba(0,0,0,.4); 
+    border-radius: 20px; z-index: 9999; font-size: 2.4rem; padding: 100px 50px 50px; box-sizing: border-box; line-height: 2; 
     top: 150px; left: 150px; font-family: "GmarketSansMedium", sans-serif; color: #000;
 }
-#popup button { cursor: pointer; color: #134aa9; background-color: transparent; position: absolute; right: 20px; bottom: 20px; font-size: 3.4rem; }
+#popup p span { background-color: #134aa9; color: #fff; padding: 5px; }
+#popup button { cursor: pointer; color: #fff; background-color: transparent; position: absolute; top: 5px; right: 20px; font-size: 3rem; }
