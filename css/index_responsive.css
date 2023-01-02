@@ -7,7 +7,8 @@
     .row { padding: 0 30px; }
 
     /* main_visual */
-    .main_visual .main_visual_box img { width: calc(90% - 420px); }
+    .main_visual .main_visual_box img { width: calc(90% - 425px); }
+    .main_visual .main_visual_text { left: 0; }
 
     /* quick_menu  */
     #quick_menu .row { padding: 0; }
@@ -287,6 +288,7 @@
     .main_visual .main_visual_text { position: static; width: 100%; display: block; text-align: center; padding-top: 10%; transform: none; }
     .main_visual .main_visual_text p { font-size: 2.6rem; }
     .main_visual .main_visual_text h3 { font-size: 8rem; }
+    .main_visual .main_visual_btn { bottom: 10%; }
 
     /* schedule */
     .schedule .month ul.month_list li.month_btn a i { font-size: 4rem; }
@@ -369,6 +371,7 @@
     .main_visual .main_visual_text p { font-size: 2.2rem; }
     .main_visual .main_visual_text h3 { font-size: 6rem; }
     .main_visual .main_visual_text h3 br { display: none; }
+    .main_visual .main_visual_btn { bottom: 20%; }
 
     /* quick_menu */
     #quick_menu { top: -50px; }
@@ -515,6 +518,7 @@
     .main_visual { height: 550px; }
     .main_visual .main_visual_text p { font-size: 1.7rem; }
     .main_visual .main_visual_text h3 { font-size: 3.8rem; }
+    .main_visual .main_visual_btn { bottom: 25%; }
 
     /* quick_menu */
     .quick_menu nav ul li { height: 72px; }
@@ -566,6 +570,7 @@
     .main_visual { height: 450px; }
     .main_visual .main_visual_text p { font-size: 1.5rem; }
     .main_visual .main_visual_text h3 { font-size: 3rem; }
+    .main_visual .main_visual_btn { bottom: 28%; }
 
     /* quick_menu */
     .quick_menu nav ul li { font-size: 1.5rem; }
