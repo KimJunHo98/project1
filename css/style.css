@@ -17,8 +17,8 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 #skip a:focus { top: 0; z-index: 999; }
 
 /* mobile_menu */
-.m_gnb { display: none; }
-.m_gnb a { width: 30px; height: 50px; font-size: 30px; display: flex; align-items: center; color: #134aa9; }
+.m_gnb_btn { display: none; }
+.m_gnb_btn a { width: 30px; height: 50px; font-size: 30px; display: flex; align-items: center; color: #134aa9; }
 
 /* scroll_top */
 .scroll_top { position: fixed; right: 30px; bottom: 30px; z-index: 99; } 
@@ -68,6 +68,21 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 .header ul.utill_menu li.utill_cal { margin-right: 0; }
 .header ul.utill_menu li a { width: 100%; height: 100%; display: block; color: #134aa9; font-size: 1.4rem; }
 .header ul.utill_menu li a:hover { border-bottom: 1px solid #134aa9; }
+/* mobile menu */
+.header .mo_menu { display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: #134aa9; padding: 0 15px; }
+.header .mo_menu a { color: #fff; }
+.header .mo_menu .head { padding: 20px 0 25px; position: relative; }
+.header .mo_menu .head .btns { width: 100%; height: 100%; display: flex; flex-direction: row; justify-content: space-between; }
+.header .mo_menu .head .btns a.btn_login { height: 30px; display: inline-block; background-color: #407de7; text-align: center; font-size: 1.4em; padding: 3px 15px; border-radius: 30px; }
+.header .mo_menu .head .btns a.close { position: absolute; top: 6px; right: 0; font-size: 2.8rem; }
+.header .mo_menu .head .srch { position: relative; }
+.header .mo_menu .head .srch input { width: 100%; height: 40px; display: inline-block; padding-left: 10px; margin-top: 20px; outline: 0 none; }
+.header .mo_menu .head .srch form a { position: absolute; top: 20px; right: 10px; color: #134aa9; font-size: 2.2rem; }
+.header .mo_menu .mo_nav { padding: 10px 0; }
+.header .mo_menu .mo_nav .mo_gnb > li a { width: 100%; height: 55px; line-height: 55px; font-family: "GmarketSansMedium", "Noto Sans KR", sans-serif; font-size: 20px; display: block; position: relative; }
+.header .mo_menu .mo_nav .mo_gnb > li a i { position: absolute; top: 50%; right: 0; transform: translate(0, -50%); }
+.header .mo_menu .mo_nav .mo_gnb > li .sub_menu { display: none; padding: 10px 0 10px 20px; }
+.header .mo_menu .mo_nav .mo_gnb > li .sub_menu li a { font-size: 1.4rem; height: 30px; line-height: 30px; font-family: "Noto Sans KR", sans-serif; }
 
 /* main_visual */
 #main_visual { width: 100%; padding-bottom: 90px; background-color: #fff; position: relative; }
@@ -84,8 +99,9 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 .main_visual .main_visual_text h3 { font-size: 8rem; color: #134aa9; line-height: 1.1; }
 #main_visual .main_visual_btn { position: absolute; bottom: 5%; left: 0; display: flex; flex-direction: row; }
 #main_visual .main_visual_btn > .prev,
-#main_visual .main_visual_btn > .next { font-family: "GmarketSansLight", sans-serif; font-size: 1.8rem; color: #134aa9; }
-#main_visual .main_visual_btn > .prev.on { font-family: "GmarketSansBold", sans-serif; }
+#main_visual .main_visual_btn > .next { font-family: "GmarketSansLight", sans-serif; font-size: 1.8rem; color: #134aa9; background-color: transparent; cursor: pointer; }
+#main_visual .main_visual_btn > .prev.on,
+#main_visual .main_visual_btn > .next.on { font-family: "GmarketSansBold", sans-serif; }
 #main_visual .main_visual_btn > .btn_bar { width: 60px; height: 3px; background-color: #134aa9; margin: 15px 15px 0; display: inline-block; }
 
 /* main */
@@ -164,7 +180,7 @@ main { display: block; position: relative; background-color: #fff; }
 #space { width: 100%; padding-top: 10%; position: relative; }
 .space { position: relative; }
 .space .space_top .section_tit { line-height: 1.3; }
-.space .space_top .section_tit, .space .space_top .section_desc { color: #333; }
+.space .space_top .section_tit, .section_desc { color: #fff; }
 .space .space_bottom { width: 100%; display: flex; flex-direction: row; padding-top: 60px; }
 .space .space_bottom .space_list { width: 60%; display: flex; flex-direction: column; }
 .space .space_bottom .space_list .space_list_btn:nth-child(2){ padding: 30px 0; }
@@ -173,7 +189,7 @@ main { display: block; position: relative; background-color: #fff; }
     display: block; width: 100%; padding: 20px 30px; border: 2px solid #134aa9; color: #134aa9; transition: all .2s ease-in;
     font-size: 2rem; font-family: "GmarketSansMedium", sans-serif; border-radius: 50px; background-color: #fff;
 }
-.space .space_bottom .space_list .space_list_btn li.top a { color: #fff; background-color: #134aa9; }
+.space .space_bottom .space_list .space_list_btn li a.active { color: #fff; background-color: #134aa9; }
 .space .space_bottom .space_list .space_list_btn li a:hover, .space .more_02 a:hover { color: #fff; background-color: #134aa9; }
 .space .space_bottom .space_img { width: 40%; display: flex; flex-direction: row; overflow: hidden; z-index: 1; }
 .space .space_bottom .space_img img { width: 100%; display: block; }

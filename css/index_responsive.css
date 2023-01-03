@@ -59,7 +59,7 @@
     /* header */
     #header { position: sticky; top: 0; left: 0; z-index: 10; }
     #header > .sub_menu_bg { display: none; }
-    .m_gnb { display: block; }
+    .m_gnb_btn { display: block; }
     .header { height: 57px; }
     .header .header_logo { width: 80px; }
     .header .header_logo a img { padding-top: 10px; }

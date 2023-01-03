@@ -77,6 +77,7 @@
                 <div class="row">
                     <div class="header">
                         <h1 class="header_logo"><a href="#"><img src="./img/main-logo.svg" alt="경기생활문화센터"></a></h1>
+                        <!-- pc menu -->
                         <nav class="nav">
                             <ul class="gnb">
                                 <li>
@@ -125,16 +126,85 @@
                                 </li>
                             </ul>
                         </nav>
+                        <!-- //pc menu -->
+                        <!-- mobile menu -->
+                        <div class="mo_menu">
+                            <div class="head">
+                                <div class="btns">
+                                    <a href="login_pc.html" target="_blank" title="새창이동" class="btn_login">로그인</a>
+                                    <a href="#" class="close"><i class="xi-close"></i></a>
+                                </div>
+                                <div class="srch">
+                                    <form action="get" method="post">
+                                        <fieldset>
+                                            <legend class="ir_so">모바일 검색창</legend>
+                                            <label for="mo_srch" class="ir_so">검색</label>
+                                            <input type="text" id="mo_srch" name="mo_srch" placeholder="검색어를 입력해주세요.">
+                                        </fieldset>
+                                        <a href="#" class="mo_srch_gtn"><i class="xi-search"></i></a>
+                                    </form>
+                                </div>
+                            </div>
+                            <nav class="mo_nav">
+                                <ul class="mo_gnb">
+                                    <li>
+                                        <a href="#">경기생활문화센터<i class="xi-angle-down"></i></a>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">센터소개</a></li>
+                                            <li><a href="#">조직도</a></li>
+                                            <li><a href="#">사업안내</a></li>
+                                            <li><a href="#">오시는길</a></li>
+                                        </ul>
+                                        <!-- //sub_menu -->
+                                    </li>
+                                    <li>
+                                        <a href="#">경기도생활문화<i class="xi-angle-down"></i></a>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">우리지역 생활문화공간</a></li>
+                                            <li><a href="#">생활문화찾기</a></li>
+                                        </ul>
+                                        <!-- //sub_menu -->
+                                    </li>
+                                    <li>
+                                        <a href="#">기록자료<i class="xi-angle-down"></i></a>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">영상채널</a></li>
+                                            <li><a href="#">발간도서</a></li>
+                                            <li><a href="#">지난사업</a></li>
+                                        </ul>
+                                        <!-- //sub_menu -->
+                                    </li>
+                                    <li>
+                                        <a href="#">웹진<i class="xi-angle-down"></i></a>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">소개</a></li>
+                                            <li><a href="#">웹진</a></li>
+                                        </ul>
+                                        <!-- //sub_menu -->
+                                    </li>
+                                    <li>
+                                        <a href="#">소통<i class="xi-angle-down"></i></a>
+                                        <ul class="sub_menu">
+                                            <li><a href="#">공지사항</a></li>
+                                            <li><a href="#">자주묻는질문</a></li>
+                                            <li><a href="#">1:1문의</a></li>
+                                        </ul>
+                                        <!-- //sub_menu -->
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <!-- //mobile menu -->
                         <ul class="utill_menu">
                             <li class="utill_login"><a href="login_pc.html" target="_blank"><i class="xi-lock-o"></i>로그인</a></li>
                             <li class="utill_search"><a href="#"><i class="xi-search"></i>검색</a></li>
                             <li class="utill_cal"><a href="#"><i class="xi-calendar"></i>일정</a></li>
                         </ul>
-                        <!-- mobile_menu -->
-                        <div class="m_gnb">
+                        <!-- mobile_menu_btn -->
+                        <div class="m_gnb_btn">
                             <a href="#" class="m_menu"><i class="xi-bars"></i></a>
                         </div>
-                        <!-- //mobile_menu -->
+                        <!-- //mobile_menu_btn -->
                     </div>
                 </div>
             </div>
@@ -166,9 +236,9 @@
                     </div>
                 </div>
                 <div class="main_visual_btn">
-                    <div class="prev on">1</div>
+                    <button class="prev">1</button>
                     <span class="btn_bar"></span>
-                    <div class="next">2</div>
+                    <button class="next">2</button>
                 </div>
             </div>
         </section>
@@ -325,45 +395,45 @@
                             <div class="space_bottom">
                                 <div class="space_list">
                                     <ul class="space_list_btn">
-                                        <li class="top"><a href="#">책 놀이터</a></li>
-                                        <li><a href="#">생활 수유실</a></li>
+                                        <li><a href="#space_img_01">책 놀이터</a></li>
+                                        <li><a href="#space_img_02">생활 수유실</a></li>
                                     </ul>
                                     <ul class="space_list_btn">
-                                        <li><a href="#">동네부엌</a></li>
-                                        <li class="w690"><a href="#">생생 수유실</a></li>
-                                        <li class="w690"><a href="#">마주침 공간1</a></li>
-                                        <li class="w690"><a href="#">마주침 공간2</a></li>
+                                        <li><a href="#space_img_03">동네부엌</a></li>
+                                        <li class="w690"><a href="#space_img_04">생생 수유실</a></li>
+                                        <li class="w690"><a href="#space_img_05">마주침 공간1</a></li>
+                                        <li class="w690"><a href="#space_img_06">마주침 공간2</a></li>
                                     </ul>
                                     <ul class="space_list_btn">
-                                        <li><a href="#">한뼘전시</a></li>
-                                        <li><a href="#">무아지경</a></li>
-                                        <li><a href="#">생생살롱1</a></li>
-                                        <li><a href="#">생생살롱2</a></li>
+                                        <li><a href="#space_img_11">한뼘전시</a></li>
+                                        <li><a href="#space_img_12">무아지경</a></li>
+                                        <li><a href="#space_img_13">생생살롱1</a></li>
+                                        <li><a href="#space_img_14">생생살롱2</a></li>
                                     </ul>
                                 </div>
                                 <div class="space_img">
-                                    <img src="img/space_01.png" alt="책놀이터 " class="space_img_01">
-                                    <img src="img/space_02.png" alt="생활수유실 " class="space_img_02">
-                                    <img src="img/space_03.png" alt="동네부엌 " class="space_img_03">
-                                    <img src="img/space_04.png" alt="생생수유실 " class="space_img_04">
-                                    <img src="img/space_05.png" alt="마주침공간1 " class="space_img_05">
-                                    <img src="img/space_06.png" alt="마주침공간2 " class="space_img_06">
-                                    <img src="img/space_07.png" alt="상상실험실1 " class="space_img_07">
-                                    <img src="img/space_08.png" alt="상상실험실2 " class="space_img_08">
-                                    <img src="img/space_09.png" alt="상상실험실3 " class="space_img_09">
-                                    <img src="img/space_10.png" alt="상상실험실4 " class="space_img_10">
-                                    <img src="img/space_11.png" alt="한뼘전시 " class="space_img_11">
-                                    <img src="img/space_12.png" alt="무아지경 " class="space_img_12">
-                                    <img src="img/space_13.png" alt="생생살롱1 " class="space_img_13">
-                                    <img src="img/space_14.png" alt="생생살롱2 " class="space_img_14">
-                                    <img src="img/space_15.png" alt="직물공방 " class="space_img_15">
-                                    <img src="img/space_16.png" alt="재단공방 " class="space_img_16">
-                                    <img src="img/space_17.png" alt="커피공방 " class="space_img_17">
-                                    <img src="img/space_18.png" alt="취미공방 " class="space_img_18">
-                                    <img src="img/space_19.png" alt="어린이창작공방 " class="space_img_19">
-                                    <img src="img/space_20.png" alt="사진촬영실 " class="space_img_20">
-                                    <img src="img/space_21.png" alt="드로잉실 " class="space_img_21">
-                                    <img src="img/space_22.png" alt="제본실" class="space_img_22">
+                                    <img src="img/space_01.png" alt="책놀이터 " id="space_img_01">
+                                    <img src="img/space_02.png" alt="생활수유실 " id="space_img_02">
+                                    <img src="img/space_03.png" alt="동네부엌 " id="space_img_03">
+                                    <img src="img/space_04.png" alt="생생수유실 " id="space_img_04">
+                                    <img src="img/space_05.png" alt="마주침공간1 " id="space_img_05">
+                                    <img src="img/space_06.png" alt="마주침공간2 " id="space_img_06">
+                                    <img src="img/space_07.png" alt="상상실험실1 " id="space_img_07">
+                                    <img src="img/space_08.png" alt="상상실험실2 " id="space_img_08">
+                                    <img src="img/space_09.png" alt="상상실험실3 " id="space_img_09">
+                                    <img src="img/space_10.png" alt="상상실험실4 " id="space_img_10">
+                                    <img src="img/space_11.png" alt="한뼘전시 " id="space_img_11">
+                                    <img src="img/space_12.png" alt="무아지경 " id="space_img_12">
+                                    <img src="img/space_13.png" alt="생생살롱1 " id="space_img_13">
+                                    <img src="img/space_14.png" alt="생생살롱2 " id="space_img_14">
+                                    <img src="img/space_15.png" alt="직물공방 " id="space_img_15">
+                                    <img src="img/space_16.png" alt="재단공방 " id="space_img_16">
+                                    <img src="img/space_17.png" alt="커피공방 " id="space_img_17">
+                                    <img src="img/space_18.png" alt="취미공방 " id="space_img_18">
+                                    <img src="img/space_19.png" alt="어린이창작공방 " id="space_img_19">
+                                    <img src="img/space_20.png" alt="사진촬영실 " id="space_img_20">
+                                    <img src="img/space_21.png" alt="드로잉실 " id="space_img_21">
+                                    <img src="img/space_22.png" alt="제본실" id="space_img_22">
                                 </div>
                             </div>
                             <ul class="more_01">
