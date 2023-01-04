@@ -87,7 +87,7 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 /* main_visual */
 #main_visual { width: 100%; padding-bottom: 90px; background-color: #fff; position: relative; }
 .main_visual { width: 100%; height: 610px; }
-.main_visual .slide_visual { width: 100%; height: 100%; position: absolute; top: 2%; left: 0; }
+.main_visual .slide_visual { width: 100%; height: 100%; position: absolute; top: 0; left: 0; }
 .main_visual .slide_visual:nth-child(2) .main_visual_box { display: none; }
 .main_visual .main_visual_box { width: 100%; height: 100%; position: relative; }
 .main_visual .main_visual_box img { width: 100%; max-width: 900px; display: block; position: absolute; top: 2%; right: 0; }
@@ -125,6 +125,7 @@ main { display: block; position: relative; background-color: #fff; }
 /* schedule */
 #schedule { width: 100%; padding: 12% 0 5%; background-color: #134aa9; }
 .schedule { width: 100%; text-align: center; color: #fff; position: relative; }
+.schedule h3, .schedule p { color: #fff; }
 .schedule .month_wrap { display: flex; flex-direction: column-reverse; }
 .schedule .month { width: 100%; height: 100px; display: flex; flex-direction: row; align-items: center; margin-top: 1%; padding: 15px; }
 .schedule .month ul { display: flex; flex-direction: row; align-items: center; }
@@ -180,7 +181,7 @@ main { display: block; position: relative; background-color: #fff; }
 #space { width: 100%; padding-top: 10%; position: relative; }
 .space { position: relative; }
 .space .space_top .section_tit { line-height: 1.3; }
-.space .space_top .section_tit, .section_desc { color: #fff; }
+.space .space_top .section_tit, .section_desc { color: #333; }
 .space .space_bottom { width: 100%; display: flex; flex-direction: row; padding-top: 60px; }
 .space .space_bottom .space_list { width: 60%; display: flex; flex-direction: column; }
 .space .space_bottom .space_list .space_list_btn:nth-child(2){ padding: 30px 0; }

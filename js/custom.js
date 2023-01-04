@@ -21,6 +21,7 @@ $(function(){
 
     // 슬라이드 메인 비주얼
     const visual = $(".main_visual").find(".main_visual_box");
+    console.log(visual);
     const btn = $(".main_visual_btn").find("button");
     const visualCount = visual.length;
     let timer;
@@ -32,12 +33,24 @@ $(function(){
     showNextSlide();
     function showNextSlide(){
         timer = setInterval(function(){
-        let nextIndex = (currentIndex+1)%visualCount;
+            let nextIndex = (currentIndex+1)%visualCount;
 
-        // 현재 슬라이드 사라지고 다음 슬라이드 보여줌
-        visual.eq(currentIndex).fadeOut();
-        visual.eq(nextIndex).fadeIn();
-        currentIndex = nextIndex;
+            // 현재 슬라이드 사라지고 다음 슬라이드 보여줌
+            visual.eq(currentIndex).fadeOut();
+            visual.eq(nextIndex).fadeIn();
+            currentIndex = nextIndex;
+
+            if(currentIndex==0){
+                $(".main_visual_btn .prev").addClass("on");
+            }else{
+                $(".main_visual_btn .prev").removeClass("on");
+            }
+
+            if(currentIndex>0){
+                $(".main_visual_btn .next").addClass("on");
+            }else{
+                $(".main_visual_btn .next").removeClass("on");
+            }
         }, 5000);
     };
 
