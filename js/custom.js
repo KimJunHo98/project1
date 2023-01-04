@@ -1,3 +1,16 @@
+// 화면 스크롤 할 때
+$(window).scroll(function(){
+    let scrollTop = $(window).scrollTop() + $(window).height()/2; // 스크롤 했을 때의 화면의 스크롤탑 값 + 화면의 높이값/2
+
+    $(".content_item").each(function(i){
+        if(scrollTop > $(this).offset().top-2){
+            $(this).addClass("show");
+        }else{
+            $(this).removeClass("show");
+        }
+    });
+});
+
 $(function(){
     // nav에 마우스 오버할 때
     let nav = $(".nav"),
@@ -21,7 +34,6 @@ $(function(){
 
     // 슬라이드 메인 비주얼
     const visual = $(".main_visual").find(".main_visual_box");
-    console.log(visual);
     const btn = $(".main_visual_btn").find("button");
     const visualCount = visual.length;
     let timer;
@@ -40,12 +52,13 @@ $(function(){
             visual.eq(nextIndex).fadeIn();
             currentIndex = nextIndex;
 
+            // prev 버튼
             if(currentIndex==0){
                 $(".main_visual_btn .prev").addClass("on");
             }else{
                 $(".main_visual_btn .prev").removeClass("on");
             }
-
+            // next 버튼
             if(currentIndex>0){
                 $(".main_visual_btn .next").addClass("on");
             }else{
@@ -55,24 +68,36 @@ $(function(){
     };
 
     // 슬라이드 버튼
-    // btn.click(function(){
-    //     clearInterval(timer);
-    //     let tg = $(this).index();
-    //     fade(tg);
-    // });
+    btn.click(function(){
+        let tg = $(this).index();
+        fade(tg);
+    });
     
-    // function fade(tg){
-    //     if(currentIndex==tg) return;
+    function fade(tg){
+        if(currentIndex==tg) return;
 
-    //     visual.eq(currentIndex).fadeOut();
-    //     visual.eq(tg).fadeIn();
-    //     currentIndex = tg;
-    // };
+        visual.eq(currentIndex).fadeOut();
+        visual.eq(tg).fadeIn();
+        currentIndex = tg;
+
+        // prev 버튼
+        if(currentIndex==0){
+            $(".main_visual_btn .prev").addClass("on");
+        }else{
+            $(".main_visual_btn .prev").removeClass("on");
+        }
+        // next 버튼
+        if(currentIndex>0){
+            $(".main_visual_btn .next").addClass("on");
+        }else{
+            $(".main_visual_btn .next").removeClass("on");
+        }
+    };
 
     // space img tab메뉴
     let spBtn = $(".space_list_btn li a");
 
-    spBtn.eq(0).addClass("active");
+    spBtn.eq(0).addClass("active"); // 초기 active 값
 
     spBtn.click(function(e){
         e.preventDefault();
@@ -97,11 +122,13 @@ $(function(){
         });
     });
 
-    // 모바일 gnb
+    // 모바일 서브메뉴
     $(".mo_menu .mo_nav .mo_gnb > li > a").click(function(e){
         e.preventDefault();
 
-        $(".mo_menu .mo_nav .mo_gnb > li .sub_menu").slideToggle(300);
+        // $(".mo_menu .mo_nav .mo_gnb > li .sub_menu").each(function(i){
+            
+        // });
     });
 });
 

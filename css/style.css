@@ -7,7 +7,6 @@
 h3[class="section_tit"] { color: #fff; font-size: 4rem; line-height: 1; font-family: "GmarketSansBold", "Noto Sans KR", sans-serif; }
 p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-serif; font-weight: 400; }
 
-
 /* skip 내비게이션 */
 #skip { position: relative; }
 #skip a { 
@@ -46,7 +45,10 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
     font-size: 2.1rem; color: #134aa9; transition: all .3s ease-in; 
 }
 .header .nav .gnb > li > a:hover { color: #333; }
-.header .nav .gnb > li > ul.sub_menu { position: absolute; left: -90px; top: 190%; height: 270px; text-align-last: left; padding: 30px 90px; z-index: 9; display: none; }
+.header .nav .gnb > li > ul.sub_menu { 
+    position: absolute; left: -90px; top: 190%; height: 270px; text-align-last: left; 
+    padding: 30px 90px; z-index: 9; display: none; 
+}
 .header .nav .gnb > li > ul.sub_menu.show { display: block; }
 .header .nav .gnb > li > ul.sub_menu > li { width: 100%; padding: 10px 0; }
 .header .nav .gnb > li > ul.sub_menu > li a { 
@@ -69,17 +71,28 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 .header ul.utill_menu li a { width: 100%; height: 100%; display: block; color: #134aa9; font-size: 1.4rem; }
 .header ul.utill_menu li a:hover { border-bottom: 1px solid #134aa9; }
 /* mobile menu */
-.header .mo_menu { display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: #134aa9; padding: 0 15px; }
+.header .mo_menu { 
+    display: none; width: 100%; height: 100%; position: fixed; top: 0; left: 0; 
+    background-color: #134aa9; padding: 0 15px; }
 .header .mo_menu a { color: #fff; }
 .header .mo_menu .head { padding: 20px 0 25px; position: relative; }
 .header .mo_menu .head .btns { width: 100%; height: 100%; display: flex; flex-direction: row; justify-content: space-between; }
-.header .mo_menu .head .btns a.btn_login { height: 30px; display: inline-block; background-color: #407de7; text-align: center; font-size: 1.4em; padding: 3px 15px; border-radius: 30px; }
+.header .mo_menu .head .btns a.btn_login { 
+    height: 30px; display: inline-block; background-color: #407de7; text-align: center; 
+    font-size: 1.4em; padding: 3px 15px; border-radius: 30px; 
+}
 .header .mo_menu .head .btns a.close { position: absolute; top: 6px; right: 0; font-size: 2.8rem; }
 .header .mo_menu .head .srch { position: relative; }
-.header .mo_menu .head .srch input { width: 100%; height: 40px; display: inline-block; padding-left: 10px; margin-top: 20px; outline: 0 none; }
+.header .mo_menu .head .srch input { 
+    width: 100%; height: 40px; display: inline-block; padding-left: 10px; 
+    margin-top: 20px; outline: 0 none; 
+}
 .header .mo_menu .head .srch form a { position: absolute; top: 20px; right: 10px; color: #134aa9; font-size: 2.2rem; }
 .header .mo_menu .mo_nav { padding: 10px 0; }
-.header .mo_menu .mo_nav .mo_gnb > li a { width: 100%; height: 55px; line-height: 55px; font-family: "GmarketSansMedium", "Noto Sans KR", sans-serif; font-size: 20px; display: block; position: relative; }
+.header .mo_menu .mo_nav .mo_gnb > li a { 
+    width: 100%; height: 55px; line-height: 55px; font-family: "GmarketSansMedium", "Noto Sans KR", sans-serif; 
+    font-size: 20px; display: block; position: relative; 
+}
 .header .mo_menu .mo_nav .mo_gnb > li a i { position: absolute; top: 50%; right: 0; transform: translate(0, -50%); }
 .header .mo_menu .mo_nav .mo_gnb > li .sub_menu { display: none; padding: 10px 0 10px 20px; }
 .header .mo_menu .mo_nav .mo_gnb > li .sub_menu li a { font-size: 1.4rem; height: 30px; line-height: 30px; font-family: "Noto Sans KR", sans-serif; }
@@ -99,10 +112,13 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 .main_visual .main_visual_text h3 { font-size: 8rem; color: #134aa9; line-height: 1.1; }
 #main_visual .main_visual_btn { position: absolute; bottom: 5%; left: 0; display: flex; flex-direction: row; }
 #main_visual .main_visual_btn > .prev,
-#main_visual .main_visual_btn > .next { font-family: "GmarketSansLight", sans-serif; font-size: 1.8rem; color: #134aa9; background-color: transparent; cursor: pointer; }
+#main_visual .main_visual_btn > .next { 
+    font-family: "GmarketSansLight", sans-serif; font-size: 1.8rem; color: #134aa9; 
+    background-color: transparent; cursor: pointer; 
+}
 #main_visual .main_visual_btn > .prev.on,
 #main_visual .main_visual_btn > .next.on { font-family: "GmarketSansBold", sans-serif; }
-#main_visual .main_visual_btn > .btn_bar { width: 60px; height: 3px; background-color: #134aa9; margin: 15px 15px 0; display: inline-block; }
+#main_visual .main_visual_btn > .prev::after { content: ""; width: 60px; height: 3px; background-color: #134aa9; margin: 15px 15px 0; display: inline-block; }
 
 /* main */
 main { display: block; position: relative; background-color: #fff; }
@@ -226,7 +242,8 @@ main { display: block; position: relative; background-color: #fff; }
 .sns .sns_top .sns_text .section_tit, .sns .sns_top .sns_text .section_desc { color: #333; }
 .sns .sns_bottom { width: 100%; display: flex; flex-direction: row; justify-content: flex-end; }
 .sns .sns_bottom .sns_slide_vid { width: 58%; display: flex; flex-direction: row; overflow: hidden; padding: 20px 0; }
-.sns .sns_bottom .sns_slide_vid .slide_box { width: 100%; height: 100%; margin-right: 44px; position: relative; border-radius: 20px; }
+.sns .sns_bottom .sns_slide_vid .slide_box { width: 100%; height: 100%; margin-right: 44px; position: relative; border-radius: 20px; transition: all .3s ease-in; }
+.sns .sns_bottom .sns_slide_vid .slide_box:hover { transform: translateY(-20px); box-shadow: 3px 1px 8px rgba(0,0,0,.3); }
 .sns .sns_bottom .sns_slide_vid .slide_box a { width: 100%; height: 100%; display: block; }
 .sns .sns_bottom .sns_slide_vid .slide_box a span { position: absolute; bottom: 10px; right: 10px; }
 .sns .sns_bottom .sns_slide_vid .slide_box a span i { color: #fff; font-size: 4rem; }
