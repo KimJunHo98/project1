@@ -1,9 +1,11 @@
 // 화면 스크롤 할 때
 $(window).scroll(function(){
-    let scrollTop = $(window).scrollTop() + $(window).height()/2; // 스크롤 했을 때의 화면의 스크롤탑 값 + 화면의 높이값/2
+    // 스크롤 했을 때의 화면의 스크롤탑 값 + 화면의 높이값/2
+    let scrollTop = $(window).scrollTop() + $(window).height()/2; 
 
+    // 스크롤 할 때 섹션에 애니메이션 효과
     $(".content_item").each(function(i){
-        if(scrollTop > $(this).offset().top-2){
+        if(scrollTop>$(this).offset().top-2){
             $(this).addClass("show");
         }else{
             $(this).removeClass("show");
@@ -125,10 +127,6 @@ $(function(){
     // 모바일 서브메뉴
     $(".mo_menu .mo_nav .mo_gnb > li > a").click(function(e){
         e.preventDefault();
-
-        // $(".mo_menu .mo_nav .mo_gnb > li .sub_menu").each(function(i){
-            
-        // });
     });
 });
 
