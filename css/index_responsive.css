@@ -232,6 +232,9 @@
 
 /* max-width: 1023px */
 @media all and (max-width: 1023px) {    
+    /* side_dot */
+    .side_dot { display: none; }
+
     /* schedule */
     #schedule { padding: 20% 0 5%; }
     .schedule ul.more_01 { position: absolute; bottom: 0; left: 0; width: 100%; display: block; font-size: 1.4rem; }
@@ -329,9 +332,6 @@
 
 /* max-width: 960px */
 @media all and (max-width: 960px) {    
-    /* scroll_top */
-    .scroll_top a { width: 45px; height: 45px; line-height: 45px; } 
-
     /* main_visual */
     .main_visual .main_visual_text p { font-size: 2.5rem; }
     .main_visual .main_visual_text h3 { font-size: 7.5rem; }

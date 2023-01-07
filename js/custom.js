@@ -4,14 +4,38 @@ $(window).scroll(function(){
     let scrollTop = $(window).scrollTop() + $(window).height()/2; 
 
     // 스크롤 할 때 섹션에 애니메이션 효과
-    $(".content_item").each(function(i){
-        if(scrollTop>$(this).offset().top-2){
+    $(".content_item").each(function(){
+        if(scrollTop > $(this).offset().top-2){
             $(this).addClass("show");
         }else{
             $(this).removeClass("show");
         }
     });
 });
+
+// side_dot 버튼 클릭해서 이동하기
+$(".side_dot ul li").click(function(e){
+    e.preventDefault();      
+
+    let target = $(this);        
+    let index = target.index(); //인덱스를 부여하여 저장
+    let section = $(".dot_item").eq(index);    
+    let offset = section.offset().top;  
+
+    $("html, body").animate({scrollTop: offset}, 500, "easeInQuint");
+});
+
+// side_dot 내비게이션
+$(window).scroll(function(){
+    let scrollTop = $(window).scrollTop()
+    
+    $(".dot_item").each(function(i){
+        if(scrollTop >= $(".dot_item").eq(i).offset().top-2){
+            $(".side_dot ul li").eq(i).addClass("active").siblings().removeClass("active");
+        }
+    });
+});
+
 
 $(function(){
     // nav에 마우스 오버할 때
@@ -55,13 +79,13 @@ $(function(){
             currentIndex = nextIndex;
 
             // prev 버튼
-            if(currentIndex==0){
+            if(currentIndex == 0){
                 $(".main_visual_btn .prev").addClass("on");
             }else{
                 $(".main_visual_btn .prev").removeClass("on");
             }
             // next 버튼
-            if(currentIndex>0){
+            if(currentIndex > 0){
                 $(".main_visual_btn .next").addClass("on");
             }else{
                 $(".main_visual_btn .next").removeClass("on");
@@ -76,20 +100,20 @@ $(function(){
     });
     
     function fade(tg){
-        if(currentIndex==tg) return;
+        if(currentIndex == tg) return;
 
         visual.eq(currentIndex).fadeOut();
         visual.eq(tg).fadeIn();
         currentIndex = tg;
 
         // prev 버튼
-        if(currentIndex==0){
+        if(currentIndex == 0){
             $(".main_visual_btn .prev").addClass("on");
         }else{
             $(".main_visual_btn .prev").removeClass("on");
         }
         // next 버튼
-        if(currentIndex>0){
+        if(currentIndex > 0){
             $(".main_visual_btn .next").addClass("on");
         }else{
             $(".main_visual_btn .next").removeClass("on");
