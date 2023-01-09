@@ -43,18 +43,18 @@ $(function(){
         subMenu = $(".sub_menu"),
         subBg = $(".sub_menu_bg");
 
-    $(nav).on("mouseover", function(){
+    nav.on("mouseover", function(){
         $(subBg).addClass("show");
     });
-    $(nav).on("mouseleave", function(){
+    nav.on("mouseleave", function(){
         $(subBg).removeClass("show");
     });
     
     // 서브메뉴
-    $(nav).on("mouseover", function(){
+    nav.on("mouseover", function(){
         $(subMenu).addClass("show");
     });
-    $(nav).on("mouseleave", function(){
+    nav.on("mouseleave", function(){
         $(subMenu).removeClass("show");
     });
 
