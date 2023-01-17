@@ -69,8 +69,6 @@
     </div>
     <!-- //popup -->
     <div id="wrap">
-        <!-- <div id="cursor"></div> -->
-         <!-- //cursor -->
         <!-- side_dot -->
         <aside class="side_dot">
             <ul>
@@ -154,7 +152,7 @@
                                             <label for="mo_srch" class="ir_so">검색</label>
                                             <input type="text" id="mo_srch" name="mo_srch" placeholder="검색어를 입력해주세요.">
                                         </fieldset>
-                                        <a href="#" class="mo_srch_gtn"><i class="xi-search"></i></a>
+                                        <a href="#" class="mo_srch_btn"><i class="xi-search"></i></a>
                                     </form>
                                 </div>
                             </div>
@@ -208,18 +206,33 @@
                             </nav>
                         </div>
                         <!-- //mobile menu -->
-                        <ul class="utill_menu">
-                            <li class="utill_login"><a href="login_pc.html" target="_blank"><i class="xi-lock-o"></i>로그인</a></li>
-                            <li class="utill_search"><a href="#"><i class="xi-search"></i>검색</a></li>
-                            <li class="utill_cal"><a href="#"><i class="xi-calendar"></i>일정</a></li>
-                        </ul>
                         <!-- mobile_menu_btn -->
                         <div class="m_gnb_btn">
                             <a href="#" class="m_menu"><i class="xi-bars"></i></a>
                         </div>
                         <!-- //mobile_menu_btn -->
+                        <ul class="utill_menu">
+                            <li class="utill_login"><a href="login_pc.html" target="_blank"><i class="xi-lock-o"></i>로그인</a></li>
+                            <li class="utill_search"><a href="#"><i class="xi-search"></i>검색</a></li>
+                            <li class="utill_cal"><a href="#"><i class="xi-calendar"></i>일정</a></li>
+                        </ul>
                     </div>
                 </div>
+            </div>
+            <div class="pc_srch">
+                <div class="close">
+                    <a href="#" class="close_btn">
+                        <i class="xi-close"></i>
+                    </a>
+                </div>
+                <form action="get" method="post">
+                    <fieldset>
+                        <legend class="ir_so">pc 검색창</legend>
+                        <label for="mo_srch" class="ir_so">검색</label>
+                        <input type="text" id="mo_srch" name="mo_srch" placeholder="검색어를 입력해주세요.">
+                    </fieldset>
+                    <a href="#" class="mo_srch_btn"><i class="xi-search"></i></a>
+                </form>
             </div>
             <div class="sub_menu_bg"></div>
         </header>

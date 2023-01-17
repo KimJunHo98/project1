@@ -7,12 +7,6 @@
 h3[class="section_tit"] { color: #fff; font-size: 4rem; line-height: 1; font-family: "GmarketSansBold", "Noto Sans KR", sans-serif; }
 p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-serif; font-weight: 400; }
 
-/* 마우스 커서 */
-#cursor { 
-    position: absolute; width: 20px; height: 20px; border-radius: 50%; background-color: #84affa; 
-    opacity: 0.5; user-select: none; pointer-events: none; z-index: 999999999;
-}
-
 /* skip 내비게이션 */
 #skip { position: relative; }
 #skip a { 
@@ -38,7 +32,8 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 }
 .side_dot ul li:last-child a { margin-bottom: 0; }
 .side_dot ul li a span { 
-    position: absolute; right: 30px; top: 50%; width: 65px; display: block; transform: translateY(-50%); opacity: 1; color: #84affa; font-size: 1.6rem; z-index: 1; transition: all .3s ease-in; opacity: 0;
+    position: absolute; right: 30px; top: 50%; width: 65px; display: block; transform: translateY(-50%); opacity: 1; 
+    color: #84affa; font-size: 1.6rem; z-index: 1; transition: all .3s ease-in; opacity: 0;
 }
 .side_dot ul li.active a { transform: rotate(0); } 
 .side_dot ul li.active a span { opacity: 1; }
@@ -108,7 +103,7 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
     width: 100%; height: 40px; display: inline-block; padding-left: 10px; 
     margin-top: 20px; outline: 0 none; 
 }
-.header .mo_menu .head .srch form a { position: absolute; top: 20px; right: 10px; color: #134aa9; font-size: 2.2rem; }
+.header .mo_menu .head .srch form .mo_srch_btn { position: absolute; top: 20px; right: 10px; color: #134aa9; font-size: 2.2rem; }
 .header .mo_menu .mo_nav { padding: 10px 0; }
 .header .mo_menu .mo_nav .mo_gnb > li a { 
     width: 100%; height: 55px; line-height: 55px; font-family: "GmarketSansMedium", "Noto Sans KR", sans-serif; 
@@ -117,6 +112,19 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 .header .mo_menu .mo_nav .mo_gnb > li a i { position: absolute; top: 50%; right: 0; transform: translate(0, -50%); }
 .header .mo_menu .mo_nav .mo_gnb > li .sub_menu { display: none; padding: 10px 0 10px 20px; }
 .header .mo_menu .mo_nav .mo_gnb > li .sub_menu li a { font-size: 1.4rem; height: 30px; line-height: 30px; font-family: "Noto Sans KR", sans-serif; }
+.pc_srch { 
+    width: 100%; height: 250px; background-color: #eff4fe; position: absolute; 
+    top: 100px; left: 0; z-index: 9; display: none; 
+}
+.pc_srch .close { width: 1100px; display: block; margin: 60px auto 0; text-align: right; }
+.pc_srch .close_btn { font-size: 3.2rem; color: #134aa9; }
+.pc_srch form { position: relative; width: 400px; margin: 0 auto; }
+.pc_srch form input { 
+    width: 100%; height: 70px; outline: none; border: 0 none; background-color: #eff4fe;
+    border-bottom: 2px solid #134aa9; font-size: 2rem; color: #333;
+}
+.pc_srch form input::placeholder { font-size: 2rem; }
+.pc_srch form .mo_srch_btn { position: absolute; top: 5px; right: 0; font-size: 3.2rem; color: #134aa9; }
 
 /* main_visual */
 #main_visual { width: 100%; padding-bottom: 90px; background-color: #fff; position: relative; }
@@ -142,7 +150,7 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 #main_visual .main_visual_btn > .prev::after { content: ""; width: 60px; height: 3px; background-color: #134aa9; margin: 15px 15px 0; display: inline-block; }
 
 /* main */
-main { display: block; position: relative; background-color: #fff; }
+main { display: block; position: relative; background-color: #fff;  }
 
 /* quick_menu */
 #quick_menu { width: 100%; position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); z-index: 3; }

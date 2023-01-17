@@ -1,19 +1,3 @@
-// 마우스 커서
-// const cursor = document.getElementById("cursor"),
-//     cStyle = window.getComputedStyle(cursor),
-//     cSize = [cStyle.width.split("px",1), cStyle.height.split("px",1)];
-// 
-// window.addEventListener("mousemove", function(e){
-//     let pointer = e,
-//         cMove = [pointer.clientX, pointer.clientY];
-// 
-//     cursor.style.left = cMove[0]+"px";
-//     cursor.style.top = cMove[1]+"px";
-// 
-//     cursor.style.marginLeft = -(cSize[0]/2)+"px";
-//     cursor.style.marginTop = -(cSize[1]/2)+"px";
-// });
-
 // 화면 스크롤 할 때
 $(window).scroll(function(){
     // 스크롤 했을 때의 화면의 스크롤탑 값 + 화면의 높이값/2
@@ -33,7 +17,7 @@ $(window).scroll(function(){
 $(".side_dot ul li").click(function(e){
     e.preventDefault();      
 
-    let target = $(this),        
+    let target = $(this),     
         index = target.index(), //인덱스를 부여하여 저장
         section = $(".dot_item").eq(index),
         offset = section.offset().top;  
@@ -71,6 +55,20 @@ $(function(){
     });
     nav.on("mouseleave", function(){
         $(subMenu).removeClass("show");
+    });
+
+    // pc 검색 버튼 
+    $(".utill_menu .utill_search a").on("click", function(e){
+        e.preventDefault();
+        
+        $(".pc_srch").slideToggle(200);
+
+        // pc 검색 닫기 버튼
+        $(".pc_srch .close_btn").on("click", function(e){
+            e.preventDefault();
+
+            $(".pc_srch").slideUp(200);
+        });
     });
 
     // 슬라이드 메인 비주얼
