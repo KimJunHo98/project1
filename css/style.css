@@ -124,7 +124,7 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
     border-bottom: 2px solid #134aa9; font-size: 2rem; color: #333;
 }
 .pc_srch form input::placeholder { font-size: 2rem; }
-.pc_srch form .mo_srch_btn { position: absolute; top: 5px; right: 0; font-size: 3.2rem; color: #134aa9; }
+.pc_srch form .pc_srch_btn { position: absolute; top: 5px; right: 0; font-size: 3.2rem; color: #134aa9; }
 
 /* main_visual */
 #main_visual { width: 100%; padding-bottom: 90px; background-color: #fff; position: relative; }
