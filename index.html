@@ -30,6 +30,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -228,15 +229,27 @@
                 <form action="get" method="post">
                     <fieldset>
                         <legend class="ir_so">pc 검색창</legend>
-                        <label for="mo_srch" class="ir_so">검색</label>
-                        <input type="text" id="mo_srch" name="mo_srch" placeholder="검색어를 입력해주세요.">
+                        <label for="pc_srch" class="ir_so">검색</label>
+                        <input type="text" id="pc_srch" name="pc_srch" placeholder="검색어를 입력해주세요.">
                     </fieldset>
-                    <a href="#" class="mo_srch_btn"><i class="xi-search"></i></a>
+                    <a href="#" class="pc_srch_btn"><i class="xi-search"></i></a>
                 </form>
             </div>
             <div class="sub_menu_bg"></div>
         </header>
         <!-- //header-->
+        <!-- calender -->
+        <!-- <div id="calender">
+            <div class="calender_container">
+                <div class="calender">
+                    <form action="#" method="get" class="cal_form">
+                        <label for="datepicker" class="ir_so">달력</label>
+                        <input type="text" id="datepicker" name="datepicker" class="datepicker" value="">
+                    </form>
+                </div>
+            </div>
+        </div> -->
+        <!-- //calender -->
         <!-- main_visual -->
         <section id="main_visual">
             <h2 class="ir_so">메인 비주얼</h2>
@@ -751,6 +764,7 @@
 
     <!-- script -->
     <script src="js/jquery-2.1.1.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/popup.js"></script>

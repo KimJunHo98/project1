@@ -272,7 +272,6 @@ main { display: block; position: relative; background-color: #fff;  }
 .sns .sns_bottom { width: 100%; display: flex; flex-direction: row; justify-content: flex-end; }
 .sns .sns_bottom .sns_slide_vid { width: 58%; display: flex; flex-direction: row; overflow: hidden; padding: 20px 0; }
 .sns .sns_bottom .sns_slide_vid .slide_box { width: 100%; height: 100%; margin-right: 44px; position: relative; border-radius: 20px; transition: all .3s ease-in; }
-.sns .sns_bottom .sns_slide_vid .slide_box:hover { transform: translateY(-20px); box-shadow: 3px 1px 8px rgba(0,0,0,.3); }
 .sns .sns_bottom .sns_slide_vid .slide_box a { width: 100%; height: 100%; display: block; }
 .sns .sns_bottom .sns_slide_vid .slide_box a span { position: absolute; bottom: 10px; right: 10px; }
 .sns .sns_bottom .sns_slide_vid .slide_box a span i { color: #fff; font-size: 4rem; }
