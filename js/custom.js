@@ -43,18 +43,18 @@ $(function(){
         subBg = $(".sub_menu_bg");
 
     nav.on("mouseover", function(){
-        $(subBg).addClass("show");
+        $(subBg).slideDown(300);
     });
     nav.on("mouseleave", function(){
-        $(subBg).removeClass("show");
+        $(subBg).slideUp(300);
     });
     
     // 서브메뉴
     nav.on("mouseover", function(){
-        $(subMenu).addClass("show");
+        $(subMenu).slideDown(300);
     });
     nav.on("mouseleave", function(){
-        $(subMenu).removeClass("show");
+        $(subMenu).slideUp(300);
     });
 
     // pc 검색 버튼 
