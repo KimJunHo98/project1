@@ -365,8 +365,10 @@
 /* max-width: 768px */
 @media all and (max-width: 768px) {    
     /* popup */
-    #popup { width: 400px; height: 400px; font-size: 2rem; top: 100px; left: 100px; }
-    #popup button { font-size: 3rem; }
+    #popup, #popup_api { width: 400px; height: 400px; font-size: 2rem; }
+    #popup { top: 100px; left: 100px; }
+    #popup_api { top: 300px; left: 100px; }
+    #popup button, #popup_api button { font-size: 3rem; }
 
     /* main_visual */
     .main_visual { height: 820px; }
@@ -515,8 +517,10 @@
 /* max-width: 486px */
 @media all and (max-width: 486px) {    
     /* popup */
-    #popup { width: 350px; height: 350px; font-size: 1.6rem; top: 80px; left: 50px; padding: 60px 30px 0; }
-    #popup button { font-size: 2.3rem; top: 2px; right: 15px; }
+    #popup, #popup_api { width: 350px; height: 350px; font-size: 1.6rem; padding: 60px 30px 0; }
+    #popup { top: 80px; left: 50px; }
+    #popup_api { top: 300px; left: 50px; }
+    #popup button, #popup_api button { font-size: 2.3rem; top: 2px; right: 15px; }
 
     /* main_visual */
     .main_visual { height: 550px; }
@@ -569,8 +573,8 @@
 /* max-width: 375px */
 @media all and (max-width: 375px) {   
     /* popup */
-    #popup { width: 300px; height: 300px; font-size: 1.6rem; top: 80px; left: 20px; padding: 30px; }
-    #popup button { font-size: 2.6rem; }
+    #popup, #popup_api { width: 300px; height: 300px; font-size: 1.6rem; top: 80px; left: 20px; padding: 30px; }
+    #popup button, #popup_api button { font-size: 2.6rem; }
     
     /* main_visual */
     .main_visual { height: 450px; }
