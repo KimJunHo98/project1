@@ -13,6 +13,18 @@ $(window).scroll(function(){
     });
 });
 
+$(window).scroll(function(){
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
+    let header = $('#header');
+    let schedule = $("#schedule");
+    
+    if(scrollTop >= schedule.offset().top){
+        $(header).addClass("sticky");
+    }else{
+        $(header).removeClass("sticky");
+    }
+})
+
 // side_dot 버튼 클릭해서 이동하기
 $(".side_dot ul li").click(function(e){
     e.preventDefault();      
@@ -22,15 +34,15 @@ $(".side_dot ul li").click(function(e){
         section = $(".dot_item").eq(index),
         offset = section.offset().top;  
 
-    $("html, body").animate({scrollTop: offset}, 500, "easeInQuint");
+    $("html, body").animate({scrollTop: offset}, 600, "easeInQuint");
 });
 
 // side_dot 내비게이션
 $(window).scroll(function(){
-    let scrollTop = $(window).scrollTop()
+    let scrollTop = $(window).scrollTop();
     
     $(".dot_item").each(function(i){
-        if(scrollTop >= $(".dot_item").eq(i).offset().top-2){
+        if(scrollTop >= $(".dot_item").eq(i).offset().top - 2){
             $(".side_dot ul li").eq(i).addClass("active").siblings().removeClass("active");
         }
     });
@@ -43,7 +55,7 @@ $(function(){
         subBg = $(".sub_menu_bg");
 
     nav.on("mouseover", function(){
-        $(subBg).slideDown(300);
+        $(subBg).stop().slideDown(300);
     });
     nav.on("mouseleave", function(){
         $(subBg).slideUp(300);
@@ -51,7 +63,7 @@ $(function(){
     
     // 서브메뉴
     nav.on("mouseover", function(){
-        $(subMenu).slideDown(300);
+        $(subMenu).stop().slideDown(300);
     });
     nav.on("mouseleave", function(){
         $(subMenu).slideUp(300);
@@ -162,9 +174,19 @@ $(function(){
     });
 
     // 모바일 서브메뉴
-    $(".mo_menu .mo_nav .mo_gnb > li > a").click(function(e){
-        e.preventDefault();
-    });
+    const mbMenu = $(".mo_menu .mo_nav .mo_gnb > li > a");
+
+    mbMenu.each(function(i){
+        mbMenu.eq(i).click(function(e){
+            e.preventDefault();
+
+            let tg = $(this);
+            const mbSubMenu = $(".mo_nav .mo_gnb li .sub_menu");
+
+            mbSubMenu.eq(i).slideToggle();
+            tg.find("i").toggleClass("rotate");
+        })
+    })
     
     // 패밀리 사이트
     let fBtn = $(".family_link > a"),

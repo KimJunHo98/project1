@@ -39,7 +39,8 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 .side_dot ul li.active a span { opacity: 1; }
 
 /* header */
-#header { width: 100%; background-color: #fff; position: relative; }
+#header { width: 100%; position: relative; background-color: #fff; z-index: 999; }
+#header.sticky { width: 100%; position: fixed; top: 0; left: 0; background-color: rgba(255,255,255,.8); z-index: 999; box-shadow: 2px 0px 20px rgba(0,0,0,.4); }
 #header > .sub_menu_bg { 
     width: 100%; height: 270px; position: absolute; left: 0; top: 100px; 
     background-color: #eff4fe; display: none; z-index: 2;
@@ -51,8 +52,12 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 
 /* pc gnb menu */
 .header .nav { width: 70%; height: 100%; }
-.header .nav .gnb { width: 100%; height: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-around; }
+.header .nav .gnb { width: 100%; height: 100%; display: flex; flex-direction: row; align-items: center; justify-content: space-between; margin-left: 10px; }
 .header .nav .gnb > li { position: relative; }
+.header .nav .gnb > li p span b.sun { color: #ffa023; font-size: 1.5rem; }
+.header .nav .gnb > li p span b.cloud { color: #cacaca; font-size: 1.5rem; }
+.header .nav .gnb > li p span b.rain { color: #5faaff; font-size: 1.5rem; }
+.header .nav .gnb > li p span b.snow { color: #b0faff; font-size: 1.5rem; }
 .header .nav .gnb > li > a { 
     width: 100%; display: block; font-family: "GmarketSansBold", "Noto Sans KR", sans-serif; 
     font-size: 2.1rem; color: #134aa9; transition: all .3s ease-in; 
@@ -103,13 +108,19 @@ p[class="section_desc"] { font-size: 1.6rem; font-family: "Noto Sans KR", sans-s
 }
 .header .mo_menu .head .srch form .mo_srch_btn { position: absolute; top: 20px; right: 10px; color: #134aa9; font-size: 2.2rem; }
 .header .mo_menu .mo_nav { padding: 10px 0; }
-.header .mo_menu .mo_nav .mo_gnb > li a { 
+.header .mo_menu .mo_nav .mo_gnb > li > a { 
     width: 100%; height: 55px; line-height: 55px; font-family: "GmarketSansMedium", "Noto Sans KR", sans-serif; 
     font-size: 20px; display: block; position: relative; 
 }
-.header .mo_menu .mo_nav .mo_gnb > li a i { position: absolute; top: 50%; right: 0; transform: translate(0, -50%); }
-.header .mo_menu .mo_nav .mo_gnb > li .sub_menu { display: none; padding: 10px 0 10px 20px; }
-.header .mo_menu .mo_nav .mo_gnb > li .sub_menu li a { font-size: 1.4rem; height: 30px; line-height: 30px; font-family: "Noto Sans KR", sans-serif; }
+.header .mo_menu .mo_nav .mo_gnb > li > a i { line-height: 55px; position: absolute; transition: all 0.3s ease-out; right: 0; transform: rotate(0deg); }
+.header .mo_menu .mo_nav .mo_gnb > li > a i.rotate { transform: rotate(180deg); }
+.header .mo_menu .mo_nav .mo_gnb > li .sub_menu { display: none; padding: 10px 0 10px 20px; border-bottom: 1px solid #fff; }
+.header .mo_menu .mo_nav .mo_gnb > li .sub_menu li a { display: inline-block; font-size: 1.4rem; height: 30px; line-height: 30px; font-family: "Noto Sans KR", sans-serif; position: relative; }
+.header .mo_menu .mo_nav .mo_gnb > li .sub_menu li a:after { 
+    position: absolute; top: 13px; right: -13px; content: ""; width: 3px; height: 3px; display: inline-block; border-radius: 10px; 
+    background-color: #fff; opacity: 0; transition: all .2s ease-in;  
+}
+.header .mo_menu .mo_nav .mo_gnb > li .sub_menu li a:hover:after { opacity: 1; width: 6px; height: 6px;  }
 .pc_srch { 
     width: 100%; height: 250px; background-color: #eff4fe; position: absolute; 
     top: 100px; left: 0; z-index: 9; display: none; 

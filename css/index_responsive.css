@@ -57,7 +57,6 @@
 /* max-width: 1280px */
 @media all and (max-width: 1280px) {    
     /* header */
-    #header { position: sticky; top: 0; left: 0; z-index: 10; }
     #header > .sub_menu_bg { display: none; }
     .m_gnb_btn { display: block; }
     .header { height: 57px; }
