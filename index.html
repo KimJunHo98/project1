@@ -30,6 +30,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/layout.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"> -->
 
     <!-- favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -82,7 +83,6 @@
                 <li><a href="#sns"><span>sns</span></a></li>
                 <li><a href="#new"><span>새소식</span></a></li>
             </ul>
-            <div class="line"></div>
         </aside>
         <!-- //side_dot -->
         <!-- header -->
@@ -223,6 +223,8 @@
                             <li class="utill_login"><a href="login_pc.html" target="_blank"><i class="xi-lock-o"></i>로그인</a></li>
                             <li class="utill_search"><a href="#"><i class="xi-search"></i>검색</a></li>
                             <li class="utill_cal"><a href="#"><i class="xi-calendar"></i>일정</a></li>
+                            <div class="dp_overlay"></div>
+                            <div id="datepicker"></div>
                         </ul>
                     </div>
                 </div>
@@ -245,18 +247,6 @@
             <div class="sub_menu_bg"></div>
         </header>
         <!-- //header-->
-        <!-- calender -->
-        <!-- <div id="calender">
-            <div class="calender_container">
-                <div class="calender">
-                    <form action="#" method="get" class="cal_form">
-                        <label for="datepicker" class="ir_so">달력</label>
-                        <input type="text" id="datepicker" name="datepicker" class="datepicker" value="">
-                    </form>
-                </div>
-            </div>
-        </div> -->
-        <!-- //calender -->
         <!-- main_visual -->
         <section id="main_visual">
             <h2 class="ir_so">메인 비주얼</h2>
@@ -350,7 +340,7 @@
                                         <li><a href="#">12</a></li>
                                         <li><a href="#">13</a></li>
                                         <li><a href="#">14</a></li>
-                                        <li><a href="#">15</a></li>
+                                        <li><a href="#" class="on">15</a></li>
                                         <li><a href="#">16</a></li>
                                         <li><a href="#">17</a></li>
                                         <li><a href="#">18</a></li>
@@ -779,5 +769,6 @@
     <script src="js/slide.js"></script>
     <script src="js/popup.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/datepicker.js"></script>
 </body>
 </html>

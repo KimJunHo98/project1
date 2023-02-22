@@ -50,8 +50,8 @@ function checkCookie(name){
     console.log(cookies, visited);
 }
 checkCookie("glifeWeb");
-close.addEventListener("click", function(){
 
+close.addEventListener("click", function(){
     if(checkBox.checked){
         // 오늘 하루 안보기
         setCookie("glifeWeb", "popup01", 1); // setCookie(쿠키명, 쿠키값, 파기일)
@@ -65,4 +65,4 @@ close.addEventListener("click", function(){
 // 팝업 이동
 $(function(){
     $("#popup").draggable();
-});
+})

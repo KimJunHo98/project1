@@ -1,0 +1,38 @@
+/* overlay */
+.dp_overlay { 
+    position: fixed; width: 100%; height: 100%; top: 0; left: 0; background-color: rgba(0,0,0,0.8); 
+    z-index: 9999; opacity: 0; pointer-events: none; transition:  all .3s ease-in-out;
+}
+.dp_overlay.visible { opacity: 1; pointer-events: auto; }
+
+/* datepiker */
+#datepicker {
+    display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 99999; 
+    width: 800px; height: auto; 
+}
+.ui-widget { font-family: "Noto Sans KR", sans-serif; }
+.ui-widget.ui-widget-content { width: 100%; height: 100%; background-color: #fff; border-radius: 20px; }
+
+/* header */
+.ui-datepicker .ui-datepicker-header { 
+    position: relative; padding: 0.2em 0; background-color: #407de7; border-radius: 20px 20px 0 0; 
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev, 
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next { 
+    position: absolute; top: 50%; transform: translateY(-50%); width: 30px; height: 30px;
+}
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-prev { left: 0; }
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next { right: 0; }
+/* .ui-datepicker .ui-datepicker-header a.ui-datepicker-prev { }
+.ui-datepicker .ui-datepicker-header a.ui-datepicker-next { } */
+.ui-datepicker .ui-datepicker-title { 
+    width: 100%; height: 60px;  line-height: 60px; text-align: center; 
+    font-size: 2rem;
+}
+.ui-datepicker table { width: 100%; height: 100%; }
+.ui-state-highlight, 
+.ui-widget-content .ui-state-highlight, 
+.ui-widget-header .ui-state-highlight { 
+    border: 1px solid rgb(218, 213, 94); background-color: #407de7; color: rgb(119, 118, 32); 
+}
+.ui-state-disabled { pointer-events: none; opacity: 0.5; }

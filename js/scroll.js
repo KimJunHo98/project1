@@ -11,12 +11,13 @@ $(window).scroll(function(){
             $(this).removeClass("show");
         }
     });
-});
+})
 
+// sticky header
 $(window).scroll(function(){
-    let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY;
-    let header = $('#header');
-    let schedule = $("#schedule");
+    let scrollTop = window.pageYOffset || document.documentElement.scrollTop || window.scrollY,
+    header = $('#header'),
+    schedule = $("#schedule");
     
     if(scrollTop >= schedule.offset().top){
         $(header).addClass("sticky");
@@ -35,7 +36,7 @@ $(".side_dot ul li").click(function(e){
         offset = section.offset().top;  
 
     $("html, body").animate({scrollTop: offset}, 500, "easeInQuint");
-});
+})
 
 // side_dot 내비게이션
 $(window).scroll(function(){
@@ -46,4 +47,4 @@ $(window).scroll(function(){
             $(".side_dot ul li").eq(i).addClass("active").siblings().removeClass("active");
         }
     });
-});
+})
