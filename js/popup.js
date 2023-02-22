@@ -63,6 +63,6 @@ close.addEventListener("click", function(){
 })
 
 // 팝업 이동
-$( function() {
-    $( "#popup" ).draggable();
-} );
+$(function(){
+    $("#popup").draggable();
+});
