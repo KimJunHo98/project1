@@ -8,7 +8,7 @@ let year = String(date.getFullYear()),
     now = year+month+day;
 
 const castBox = document.querySelector(".weather_api");
-let url = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/", /*URL*/
+let url = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/", /*URL*/
     params = {
         type: ["getUltraSrtNcst","getUltraSrtFcst"],
         Key: "0PsKzhgdwTGb31fYbqtimZXYqghQBb%2FfMm3iRnZbAk04jO0IecNoZCtGcF3n%2BHAkmq7dJDSpwQhDp1VknMlItw%3D%3D",
