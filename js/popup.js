@@ -47,7 +47,7 @@ function checkCookie(name){
     }else{
         myPop.style.display = "block";
     }
-    console.log(cookies, visited);
+    // console.log(cookies, visited);
 }
 checkCookie("glifeWeb");
 
@@ -63,6 +63,30 @@ close.addEventListener("click", function(){
 })
 
 // 팝업 이동
-$(function(){
-    $("#popup").draggable();
-})
+// 이미지를 움직이는 함수
+function movingImg(e, objMove){
+    objMove.style.left = e.clientX - objMove.offsetWidth / 2 + "px";
+    objMove.style.top = e.clientY - objMove.offsetHeight / 2 + "px";
+}
+
+// 윈도우 로드 실행 함수
+window.onload = function(){
+    // click
+    myPop.onmousedown = function(){
+        let tg = this;
+
+        document.onmousemove = function(e){
+            movingImg(e, tg);
+        }
+    }
+
+    // hover
+    myPop.onmouseup = function(){
+        document.onmousemove = null;
+    }
+
+    // drag
+    myPop.ondragstart = function(e){
+        e.preventDefault();
+    }
+}

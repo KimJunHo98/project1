@@ -1,12 +1,12 @@
-// 날씨 api
 // 오늘 날짜 생성
 let date = new Date();
 // YYYYMMDD
 let year = String(date.getFullYear()),
-    month = String(date.getMonth()+1).padStart(2, "0"),
-    day = String(date.getDate()).padStart(2, "0"),
-    now = year+month+day;
+month = String(date.getMonth()+1).padStart(2, "0"),
+day = String(date.getDate()).padStart(2, "0"),
+now = year+month+day;
 
+// 날씨 api
 const castBox = document.querySelector(".weather_api");
 let url = "https://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/", /*URL*/
     params = {
