@@ -1,4 +1,4 @@
-# Project Name
+# Glife
 > 경기생할문화센터 리뉴얼 사이트입니다.
 > 구현화면보기 
 [_here_](https://kimjunho98.github.io/project1/)
@@ -13,7 +13,6 @@
 * [Usage](#usage)
 * [Project Status](#project-status)
 * [Room for Improvement](#room-for-improvement)
-* [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
 <!-- * [License](#license) -->
 
@@ -27,7 +26,7 @@
 <!-- 사용한 기술환경 (언어와 버전을 작성) -->
 - Tech 1 - HTML5
 - Tech 2 - CSS3
-- Tech 3 - ES6
+- Tech 3 - JavaScript ES6
 
 
 <!--## Hierarchy
@@ -44,10 +43,10 @@ folder1/
 ``` -->
 
 ## Features
-- 구현기능 1:
-- 구현기능 2:
-- 구현기능 3:
-- 구현기능 4:
+- 구현기능 1: 슬라이드 다운 네비게이션
+- 구현기능 2: 햄버거 메뉴
+- 구현기능 3: 캘린더
+- 구현기능 4: 페이드인&아웃 배너
 
 
 ## Screenshots
@@ -56,7 +55,7 @@ folder1/
 
 
 ## Project Status
-프로젝트의 진행상태: 진행중 / 진행완료/ 
+프로젝트의 진행상태: 진행완료 
 
 
 ## Room for Improvement
@@ -69,13 +68,6 @@ folder1/
 To do:
 - Feature to be added 1
 - Feature to be added 2
-
-
-## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
 
 
 ## Contact
