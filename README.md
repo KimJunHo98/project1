@@ -1,4 +1,4 @@
-# Glife
+# Glife
 > 경기생할문화센터 리뉴얼 사이트입니다.
 > 구현화면보기 
 [_here_](https://kimjunho98.github.io/project1/)
