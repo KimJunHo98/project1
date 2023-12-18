@@ -55,24 +55,8 @@ folder1/
 
 
 ## Screenshots
-<!--[구현화면스크린샷](./img/screenshot.png) -->
-<!-- If you have screenshots you'd like to share, include them here. -->
-
-
-## Project Status
-프로젝트의 진행상태: 진행완료 
-
-
-## Room for Improvement
-개선사항
-
-개선사항
-- 공지사항 슬라이드 애니메이션 떨림
-- 푸터 패밀리사이트 
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
+[구현화면스크린샷](![site1-pc](https://github.com/KimJunHo98/project1/assets/113867436/df00c59c-e30f-406a-8e76-b57498470630)
+)
 
 
 ## Contact
