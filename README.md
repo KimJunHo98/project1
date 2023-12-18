@@ -54,11 +54,6 @@ folder1/
 - 구현기능 9: 오토 슬라이드 섹션
 
 
-## Screenshots
-[구현화면스크린샷](![site1-pc](https://github.com/KimJunHo98/project1/assets/113867436/df00c59c-e30f-406a-8e76-b57498470630)
-)
-
-
 ## Contact
 Created by [@KimJunHo](dydgnscc6845@gmail.com) - feel free to contact me!
 
